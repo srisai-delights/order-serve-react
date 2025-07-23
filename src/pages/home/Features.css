@@ -1,0 +1,65 @@
+.features-container {
+    background-color: hsl(10, 80%, 95%);
+    color: #333;
+    font-family: 'Segoe UI', sans-serif;
+    /*max-width: 960px;*/
+    margin: 60px auto;
+    padding: 0 20px 60px;
+    text-align: center;
+}
+
+.features-header {
+    margin-bottom: 50px;
+}
+
+    .features-header h1 {
+        font-size: 3rem;
+        color: hsl(10, 80%, 40%);
+        margin-bottom: 10px;
+    }
+
+    .features-header p {
+        font-size: 1.2rem;
+        color: #555;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+.features-grid {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.feature-card {
+    background-color: hsl(10, 80%, 98%);
+    width: auto;
+    padding: 25px 20px;
+    border-radius: 14px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border:dashed;
+}
+
+    .feature-card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+    }
+
+    .feature-card h3 {
+        margin-bottom: 15px;
+        color: hsl(10, 80%, 35%);
+    }
+
+    .feature-card p {
+        font-size: 1rem;
+        color: #555;
+        line-height: 1.5;
+    }
+
+.features-footer {
+    margin-top: 60px;
+    font-size: 0.9rem;
+    color: #777;
+}

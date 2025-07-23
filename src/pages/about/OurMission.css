@@ -1,0 +1,42 @@
+/* Our Mission Page Styles */
+
+.ourmission-container {
+    background-color: hsl(10, 80%, 95%);
+    color: #333;
+    font-family: 'Segoe UI', sans-serif;
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.ourmission-header h1 {
+    font-size: 3rem;
+    color: hsl(10, 80%, 40%);
+    margin-bottom: 10px;
+}
+
+.ourmission-header p {
+    font-size: 1.3rem;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.ourmission-content h2 {
+    font-size: 2rem;
+    color: hsl(10, 80%, 40%);
+    margin-bottom: 20px;
+}
+
+.ourmission-content p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 25px;
+    color: #444;
+}
+
+.ourmission-footer {
+    margin-top: 60px;
+    font-size: 0.9rem;
+    color: #777;
+}

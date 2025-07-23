@@ -1,0 +1,79 @@
+[
+  {
+    "name": "Chicken Biryani",
+    "price": 109,
+    "category": "Biryani",
+    "description": "basmati rice cooked with tender meat and spices.",
+    "image": "biryaniChicken.jpg"
+  },
+  {
+    "name": "Hyderabadi Chicken Biryani",
+    "price": 109,
+    "category": "Biryani",
+    "description": "hyderabadiBiryaniChicken meat and spices.",
+    "image": "hyderabadiBiryaniChicken.jpg"
+  },
+  {
+    "name": "Dindigul Chicken Biryani",
+    "price": 109,
+    "category": "Biryani",
+    "description": "dindigulBiriyani meat and spices.",
+    "image": "dindigulBiriyaniChicken.jpg"
+  },
+  {
+    "name": "Lamb Biryani",
+    "price": 109,
+    "category": "Biryani",
+    "description": "basmati rice cooked with tender meat and spices.",
+    "image": "biryaniLamb.jpg"
+  },
+  {
+    "name": "Hyderabadi Lamb Biryani",
+    "price": 109,
+    "category": "Biryani",
+    "description": "Hyderabadi Biryani Lamb meat and spices.",
+    "image": "hyderabadiBiryaniLamb.jpg"
+  },
+  {
+    "name": "Dindigul Lamb Biryani",
+    "price": 109,
+    "category": "Biryani",
+    "description": "Dindigul Biriyani Lamb meat and spices.",
+    "image": "dindigulBiriyaniLamb.jpg"
+  },
+  {
+    "name": "Fish Biryani",
+    "price": 109,
+    "category": "Biryani",
+    "description": "basmati rice cooked with tender meat and spices.",
+    "image": "biryaniFish.jpg"
+  },
+  {
+    "name": "Prawn Biryani",
+    "price": 109,
+    "category": "Biryani",
+    "description": "basmati rice cooked with tender meat and spices.",
+    "image": "biryaniPrawn.jpg"
+  },
+  {
+    "name": "Veg Biryani",
+    "price": 109,
+    "category": "Biryani",
+    "description": "basmati rice cooked with tender vegetables and spices.",
+    "image": "biryaniVeg.jpg"
+  },
+  {
+    "name": "Panner Biryani",
+    "price": 109,
+    "category": "Biryani",
+    "description": "basmati rice cooked with tender panner and spices.",
+    "image": "biryaniPanner.jpg"
+  },
+  {
+    "name": "Meal Maker Biryani",
+    "price": 109,
+    "category": "Biryani",
+    "description": "basmati rice cooked with tender MealMaker and spices.",
+    "image": "biryaniMealMaker.jpg"
+  }
+]

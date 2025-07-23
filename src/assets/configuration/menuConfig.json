@@ -1,0 +1,113 @@
+[
+  {
+    "title": "Home",
+    "path": "/",
+    "subMenu": [
+      {
+        "title": "Welcome",
+        "path": "/home/welcome"
+      },
+      {
+        "title": "Features",
+        "path": "/home/features"
+      },
+      {
+        "title": "Testimonials",
+        "path": "/home/testimonials"
+      },
+      {
+        "title": "Gallery",
+        "path": "/home/gallery"
+
+      }
+    ]
+  },
+  {
+    "title": "Menu",
+    "path": "/menu",
+    "subMenu": [
+      {
+        "title": "Biryani",
+        "path": "/menu/biryani"
+      },
+      {
+        "title": "Curries",
+        "path": "/menu/curries"
+      },
+      {
+        "title": "Desserts",
+        "path": "/menu/desserts"
+      },
+      {
+        "title": "Beverages",
+        "path": "/menu/beverages"
+      },
+      {
+        "title": "Tandoori",
+        "path": "/menu/tandoori"
+      },
+      {
+        "title": "Snacks",
+        "path": "/menu/snacks"
+      }
+    ]
+  },
+  {
+    "title": "Services",
+    "path": "/services",
+    "subMenu": [
+      {
+        "title": "Catering",
+        "path": "/services/catering"
+      },
+      {
+        "title": "Delivery",
+        "path": "/services/delivery"
+      },
+      {
+        "title": "Takeaway",
+        "path": "/services/takeaway"
+      },
+      {
+        "title": "Online Ordering",
+        "path": "/services/online-ordering"
+      }
+    ]
+  },
+  {
+    "title": "About",
+    "path": "/about",
+    "subMenu": [
+      {
+        "title": "Our Story",
+        "path": "/about/our-story"
+      },
+      {
+        "title": "Team",
+        "path": "/about/team"
+      },
+      {
+        "title": "Careers",
+        "path": "/about/careers"
+      }
+    ]
+  },
+  {
+    "title": "Contact",
+    "path": "/contact",
+    "subMenu": [
+      {
+        "title": "Contact Us",
+        "path": "/contact/contact-us"
+      },
+      {
+        "title": "Support",
+        "path": "/contact/support"
+      },
+      {
+        "title": "Feedback",
+        "path": "/contact/feedback"
+      }
+    ]
+  }
+]

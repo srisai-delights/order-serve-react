@@ -1,0 +1,48 @@
+.welcome-container {
+    height: 100%;
+    width:100%;
+    background-color: hsl(10, 80%, 95%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', sans-serif;
+    padding: 20px;
+    text-align: center;
+    color: #333;
+}
+
+.welcome-content {
+    /*max-width: 500px;*/
+    width: 100%;
+    background-color: hsl(10, 80%, 98%);
+    padding: 40px 30px;
+    border-radius: 16px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+    .welcome-content h1 {
+        font-size: 3rem;
+        color: hsl(10, 80%, 40%);
+        margin-bottom: 20px;
+    }
+
+    .welcome-content p {
+        font-size: 1.25rem;
+        margin-bottom: 30px;
+        color: #555;
+    }
+
+    .welcome-content .btn {
+        display: inline-block;
+        background-color: hsl(10, 80%, 55%);
+        color: white;
+        padding: 15px 30px;
+        font-weight: bold;
+        border-radius: 10px;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+    }
+
+        .welcome-content .btn:hover {
+            background-color: hsl(10, 80%, 45%);
+        }

@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Bread Halwa",
+    "price": 49,
+    "category": "Desserts",
+    "description": "Bread Halwa one cup.",
+    "image": "breadHalwa.jpg"
+  },
+  {
+    "name": "Brownie",
+    "price": 49,
+    "category": "Desserts",
+    "description": "Brownie 4 pcs.",
+    "image": "brownie.jpg"
+  },
+  {
+    "name": "Gulab Jamun",
+    "price": 49,
+    "category": "Desserts",
+    "description": "Gulab Jamun 2 pcs.",
+    "image": "gulabJamun.jpg"
+  },
+  {
+    "name": "Gulab Jamun Dry",
+    "price": 49,
+    "category": "Desserts",
+    "description": "Gulab Jamun Dry.",
+    "image": "gulabJamunDry.jpg"
+  },
+  {
+    "name": "Laddu",
+    "price": 49,
+    "category": "Desserts",
+    "description": "Laddu.",
+    "image": "laddu.jpg"
+  },
+  {
+    "name": "Mysore Pak",
+    "price": 49,
+    "category": "Desserts",
+    "description": "Mysore Pak.",
+    "image": "mysorePak.jpg"
+  },
+  {
+    "name": "Pal Kova",
+    "price": 49,
+    "category": "Desserts",
+    "description": "Pal Kova.",
+    "image": "palKova.jpg"
+  },
+  {
+    "name": "Rava Laddu",
+    "price": 49,
+    "category": "Desserts",
+    "description": "Rava Laddu.",
+    "image": "ravaLaddu.jpg"
+  },
+  {
+    "name": "Wheat Halwa",
+    "price": 49,
+    "category": "Desserts",
+    "description": "Wheat Halwa",
+    "image": "wheatHalwa.jpg"
+  }
+]

@@ -1,0 +1,12 @@
+.home-page {
+    font-family: Arial, sans-serif;
+    padding-top: 80px;
+    width: 100%;
+}
+
+.hero {
+    text-align: center;
+    background-color: hsl(0, 0%, 96%);
+    border-radius: 8px;
+}
+

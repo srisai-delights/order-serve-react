@@ -1,0 +1,72 @@
+[
+  {
+    "name": "Chicken Curry",
+    "price": 89,
+    "category": "Curries",
+    "description": "Chicken Curry.",
+    "image": "chickenCurry.jpg"
+  },
+  {
+    "name": "Chicken Korma",
+    "price": 89,
+    "category": "Curries",
+    "description": "Chicken Korma.",
+    "image": "chickenKorma.jpg"
+  },
+  {
+    "name": "Lamb Curry",
+    "price": 189,
+    "category": "Curries",
+    "description": "Lamb Curry.",
+    "image": "lambCurry.jpg"
+  },
+  {
+    "name": "Lamb Korma",
+    "price": 189,
+    "category": "Curries",
+    "description": "Lamb Korma.",
+    "image": "lambKorma.jpg"
+  },
+  {
+    "name": "Prawn Curry",
+    "price": 149,
+    "category": "Curries",
+    "description": "Prawn Curry.",
+    "image": "prawnCurry.jpg"
+  },
+  {
+    "name": "Prawn Korma",
+    "price": 149,
+    "category": "Curries",
+    "description": "Prawn Korma.",
+    "image": "prawnKorma.jpg"
+  },
+  {
+    "name": "Fish Curry",
+    "price": 159,
+    "category": "Curries",
+    "description": "Fish Curry.",
+    "image": "fishCurry.jpg"
+  },
+  {
+    "name": "Panner Korma",
+    "price": 89,
+    "category": "Curries",
+    "description": "Panner Korma.",
+    "image": "pannerCurry.jpg"
+  },
+  {
+    "name": "Vegetable Curry",
+    "price": 89,
+    "category": "Curries",
+    "description": "Vegetable Curry.",
+    "image": "vegetableCurry.jpg"
+  },
+  {
+    "name": "Vegetable Korma",
+    "price": 89,
+    "category": "Curries",
+    "description": "Vegetable Korma.",
+    "image": "vegetableKorma.jpg"
+  }
+]

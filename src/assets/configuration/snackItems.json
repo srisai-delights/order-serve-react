@@ -1,0 +1,86 @@
+[
+  {
+    "name": "Chicken Roll",
+    "price": 49,
+    "category": "Snacks",
+    "description": "chicken Roll 1pcs.",
+    "image": "chickenRoll.jpg"
+  },
+  {
+    "name": "Chilli Bajji",
+    "price": 49,
+    "category": "Snacks",
+    "description": "Chilli Bajji 2pcs.",
+    "image": "chilliBajji.jpg"
+  },
+  {
+    "name": "Egg Puffs",
+    "price": 49,
+    "category": "Snacks",
+    "description": "Egg Puffs 2pcs.",
+    "image": "eggPuffs.jpg"
+  },
+  {
+    "name": "Lamb Roll",
+    "price": 49,
+    "category": "Snacks",
+    "description": "Lamb Roll 1pcs.",
+    "image": "lambRoll.jpg"
+  },
+  {
+    "name": "Murrukku",
+    "price": 49,
+    "category": "Snacks",
+    "description": "Murrukku 2pcs.",
+    "image": "murukku.jpg"
+  },
+  {
+    "name": "Onion Bajji",
+    "price": 49,
+    "category": "Snacks",
+    "description": "Onion Bajji 2pcs.",
+    "image": "onionBajji.jpg"
+  },
+  {
+    "name": "Potato Bajji",
+    "price": 49,
+    "category": "Snacks",
+    "description": "Potato Bajji 2pcs.",
+    "image": "potatoBajji.jpg"
+  },
+  {
+    "name": "Chicken Samosa",
+    "price": 49,
+    "category": "Snacks",
+    "description": "Chicken Samosa 2pcs.",
+    "image": "samosaChicken.jpg"
+  },
+  {
+    "name": "Samosa",
+    "price": 49,
+    "category": "Snacks",
+    "description": "Samosa 2pcs",
+    "image": "samosaVeg.jpg"
+  },
+  {
+    "name": "Lamb Samosa",
+    "price": 49,
+    "category": "Snacks",
+    "description": "Lamb Samosa 2pcs",
+    "image": "samosaLamb.jpg"
+  },
+  {
+    "name": "Spring Roll",
+    "price": 49,
+    "category": "Snacks",
+    "description": "Spring Roll 2pcs",
+    "image": "springRoll.jpg"
+  },
+  {
+    "name": "Thattai",
+    "price": 49,
+    "category": "Snacks",
+    "description": "Thattai 4 pcs",
+    "image": "thattai.jpg"
+  }
+]

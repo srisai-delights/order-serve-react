@@ -1,0 +1,152 @@
+
+/* Order placed view */
+.order-summary-container {
+    margin-top: 24px;
+    text-align: left;
+    display: inline-block;
+    width: 100%;
+    max-width: 800px;
+}
+
+.order-success {
+    text-align: center;
+    padding: 40px 0;
+}
+
+    .order-success h1 {
+        color: #4caf50;
+        margin-bottom: 10px;
+    }
+
+    .order-success p {
+        font-size: 1.2rem;
+        color: #333;
+    }
+
+/* Table Styles */
+.order-summary-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.order-summary-container th,
+.order-summary-container td {
+    padding: 6px;
+    border-bottom: 1px solid #ddd;
+}
+
+.order-summary-container th {
+    background-color: #f2f2f2;
+    text-align: left;
+}
+
+.order-summary-container td img {
+    width: 48px;
+    height: 48px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.order-summary-container td:last-child,
+.order-summary-container th:last-child {
+    text-align: right;
+}
+
+.order-summary-container td:nth-child(4),
+.order-summary-container th:nth-child(4) {
+    text-align: center;
+}
+
+tfoot td {
+    font-weight: bold;
+    background-color: #fafafa;
+}
+
+/* Button styles */
+.checkout-button {
+    padding: 10px 20px;
+    background-color: #ff4d4d;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.2s ease-in-out;
+}
+
+    .checkout-button:hover {
+        background-color: #e53935;
+    }
+.checkout-success {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.success-title {
+    color: #4caf50;
+}
+
+.success-message {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.summary-container {
+    margin-top: 24px;
+    display: inline-block;
+    text-align: left;
+}
+
+.summary-heading {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.summary-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+    .summary-table th,
+    .summary-table td {
+        padding: 6px;
+        text-align: left;
+    }
+
+    .summary-table th {
+        background: #eee;
+    }
+
+.summary-image {
+    width: 48px;
+    height: 48px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.summary-table .right {
+    text-align: right;
+}
+
+.summary-table .center {
+    text-align: center;
+}
+
+.summary-table .bold {
+    font-weight: bold;
+}
+
+.checkout-total {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.checkout-button {
+    padding: 10px 20px;
+    background: #ff4d4d;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

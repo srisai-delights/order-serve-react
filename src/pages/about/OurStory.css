@@ -1,0 +1,97 @@
+/* Our Story Page Styles */
+
+.ourstory-container {
+    background-color: hsl(10, 80%, 95%);
+    color: #333;
+    font-family: 'Segoe UI', sans-serif;
+    padding: 60px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.ourstory-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+    .ourstory-header h1 {
+        font-size: 3rem;
+        color: hsl(10, 80%, 40%);
+        margin-bottom: 10px;
+    }
+
+    .ourstory-header p {
+        font-size: 1.3rem;
+        color: #555;
+    }
+
+.ourstory-content {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 50px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.ourstory-image {
+    flex: 1 1 300px;
+    max-width: 350px;
+    border-radius: 16px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    object-fit: cover;
+    height: 250px;
+}
+
+.ourstory-text {
+    flex: 2 1 400px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #444;
+}
+
+.ourstory-values {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+    .ourstory-values h2 {
+        color: hsl(10, 80%, 40%);
+        margin-bottom: 20px;
+    }
+
+    .ourstory-values ul {
+        list-style: none;
+        padding: 0;
+        font-size: 1.2rem;
+        color: #555;
+    }
+
+        .ourstory-values ul li {
+            margin-bottom: 12px;
+        }
+
+/* Footer */
+.ourstory-footer {
+    text-align: center;
+    color: #777;
+    font-size: 0.9rem;
+    margin-top: 40px;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+    .ourstory-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ourstory-image,
+    .ourstory-text {
+        max-width: 100%;
+        flex: unset;
+    }
+
+    .ourstory-image {
+        height: 200px;
+    }
+}

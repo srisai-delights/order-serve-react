@@ -1,0 +1,95 @@
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.catering-container {
+    background-color: hsl(10, 80%, 95%);
+    color: #333;
+    /*border-block:double;*/
+    /*border:double;*/
+}
+
+/* Hero Section */
+.catering-hero {
+    /*background-image: url('https://images.unsplash.com/photo-1555992336-03a23c6f2d6d');*/
+    background-color: hsl(10, 85%, 92%);
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px;
+    text-align: center;
+    color: black;
+}
+
+    .catering-hero h1 {
+        font-size: 3rem;
+        margin-bottom: 10px;
+    }
+
+    .catering-hero p {
+        font-size: 1.3rem;
+        margin-bottom: 20px;
+    }
+
+.btn {
+    display: inline-block;
+    background-color: hsl(10, 80%, 55%);
+    color: white;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+    .btn:hover {
+        background-color: hsl(10, 80%, 45%);
+    }
+
+/* Services Section */
+.services-section {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: hsl(10, 80%, 95%);
+    
+}
+
+.service-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.service-card {
+    background-color: hsl(10, 80%, 92%);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    width: auto;
+    border: dashed;
+}
+
+    .service-card h3 {
+        color: hsl(10, 80%, 40%);
+        margin-bottom: 10px;
+    }
+
+/* Contact Section */
+.contact-section {
+    padding: 20px 20px;
+    text-align: center;
+    background-color: hsl(10, 80%, 95%);
+}
+
+/* Footer */
+footer {
+    background-color: hsl(10, 80%, 25%);
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
