@@ -10,7 +10,7 @@ const Services = () => {
     return (
         <div className="services-page">
             <header className="catering-hero">
-                <h1>Our Premium Catering Services</h1>
+                <h1>Our Catering Services</h1>
                 <p>Discover the range of services we offer to make your meal experience delightful and convenient.</p>
                 <a href="#contact" className="btn">Book Now</a>
             </header>
