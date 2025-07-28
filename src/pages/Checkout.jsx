@@ -30,6 +30,44 @@ const Checkout = ({ cart, setCart }) => {
         setTimeout(() => navigate("/"), 2000);
     };
 
+    const renderOrderSummaryTable = () => (
+        <div className="summary-container">
+            <h2 className="summary-heading">Order Summary</h2>
+            <table className="summary-table">
+                <thead>
+                    <tr>
+                        <th>Image</th>
+                        <th>Item</th>
+                        <th>Description</th>
+                        <th>Qty</th>
+                        <th>Price</th>
+                        <th>Subtotal</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {orderSummary.map(item => (
+                        <tr key={item.id}>
+                            <td>
+                                <img src={item.image} alt={item.name} className="summary-image" />
+                            </td>
+                            <td>{item.name}</td>
+                            <td>{item.description}</td>
+                            <td className="center">{item.quantity}</td>
+                            <td className="right">₹{item.price}</td>
+                            <td className="right">₹{(item.quantity * parseFloat(item.price)).toFixed(2)}</td>
+                        </tr>
+                    ))}
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colSpan={5} className="right bold">Total</td>
+                        <td className="right bold">₹{getTotal()}</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    );
+
     if (orderPlaced) {
         return (
             <div className="menu-container checkout-success">
@@ -38,41 +76,7 @@ const Checkout = ({ cart, setCart }) => {
                     Your order has been placed successfully.<br />
                     Thank you for choosing Sri Sai Delights!
                 </p>
-                <div className="summary-container">
-                    <h2 className="summary-heading">Order Summary</h2>
-                    <table className="summary-table">
-                        <thead>
-                            <tr>
-                                <th>Image</th>
-                                <th>Item</th>
-                                <th>Description</th>
-                                <th>Qty</th>
-                                <th>Price</th>
-                                <th>Subtotal</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            {orderSummary.map(item => (
-                                <tr key={item.id}>
-                                    <td>
-                                        <img src={item.image} alt={item.name} className="summary-image" />
-                                    </td>
-                                    <td>{item.name}</td>
-                                    <td>{item.description}</td>
-                                    <td className="center">{item.quantity}</td>
-                                    <td className="right">₹{item.price}</td>
-                                    <td className="right">₹{(item.quantity * parseFloat(item.price)).toFixed(2)}</td>
-                                </tr>
-                            ))}
-                        </tbody>
-                        <tfoot>
-                            <tr>
-                                <td colSpan={5} className="right bold">Total</td>
-                                <td className="right bold">₹{getTotal()}</td>
-                            </tr>
-                        </tfoot>
-                    </table>
-                </div>
+                {renderOrderSummaryTable()}
             </div>
         );
     }
@@ -84,22 +88,8 @@ const Checkout = ({ cart, setCart }) => {
                 <p>Your cart is empty.</p>
             ) : (
                 <>
-                    <div className="menu-grid">
-                        {cart.map((item, idx) => (
-                            <div key={idx} className="menu-tile">
-                                <div className="image-container">
-                                    <img src={item.image} alt={item.name} className="tile-image" />
-                                </div>
-                                <div className="overlay-text">
-                                    <h3 className="tile-title">{item.name}</h3>
-                                    <p className="tile-description">{item.description}</p>
-                                    <p className="tile-price">₹{item.price}</p>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
+                    {renderOrderSummaryTable()}
                     <div className="checkout-total">
-                        <h2>Total: ₹{getTotal()}</h2>
                         <button className="checkout-button" onClick={handleCheckout}>
                             Place Order
                         </button>

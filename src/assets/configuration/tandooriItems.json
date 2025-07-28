@@ -1,26 +1,32 @@
 [
   {
+    "id": "chickenTandoori",
     "name": "Chicken Tandoori",
     "price": 89,
     "category": "Tandoori",
     "description": "Chicken Tandoori 1pcs.",
     "image": "chickenTandoori.jpg",
-    "isAvailable":true
+    "isAvailable":true, 
+    "isVisible":true
   },
   {
+    "id": "lambKebabs",
     "name": "Lamb Kebabs",
     "price": 89,
     "category": "Tandoori",
     "description": "Lamb Kebabs 2pcs.",
     "image": "lambKebabs.jpg",
-    "isAvailable":true
+    "isAvailable":true, 
+    "isVisible":true
   },
   {
+    "id": "pannerTandoori",
     "name": "Panner Tandoori",
     "price": 49,
     "category": "Tandoori",
     "description": "Panner Tandoori 2pcs.",
     "image": "pannerTandoori.jpg",
-    "isAvailable":true
+    "isAvailable":true, 
+    "isVisible":true
   }
 ]

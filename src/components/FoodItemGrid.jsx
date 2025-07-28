@@ -2,7 +2,7 @@ import VegBiryani from '../assets/biryani/vegetable.jpg';
 import './FoodItemGrid.css'; 
 
 const FoodItemGrid = ({ items, category, onAddToCart, localImages }) => {
-    const filteredItems = items.filter(item => item.category === category);
+    const filteredItems = items.filter(item => item.category === category && item.isVisible);
 
     if (!filteredItems.length) return <p>No items found in {category} category.</p>;
 
