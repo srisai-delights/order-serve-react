@@ -4,69 +4,79 @@
     "price": 89,
     "category": "Curries",
     "description": "Chicken Curry.",
-    "image": "chickenCurry.jpg"
+    "image": "chickenCurry.jpg",
+    "isAvailable":true
   },
   {
     "name": "Chicken Korma",
     "price": 89,
     "category": "Curries",
     "description": "Chicken Korma.",
-    "image": "chickenKorma.jpg"
+    "image": "chickenKorma.jpg",
+    "isAvailable":true
   },
   {
     "name": "Lamb Curry",
     "price": 189,
     "category": "Curries",
     "description": "Lamb Curry.",
-    "image": "lambCurry.jpg"
+    "image": "lambCurry.jpg",
+    "isAvailable":true
   },
   {
     "name": "Lamb Korma",
     "price": 189,
     "category": "Curries",
     "description": "Lamb Korma.",
-    "image": "lambKorma.jpg"
+    "image": "lambKorma.jpg",
+    "isAvailable":true
   },
   {
     "name": "Prawn Curry",
     "price": 149,
     "category": "Curries",
     "description": "Prawn Curry.",
-    "image": "prawnCurry.jpg"
+    "image": "prawnCurry.jpg",
+    "isAvailable":true
   },
   {
     "name": "Prawn Korma",
     "price": 149,
     "category": "Curries",
     "description": "Prawn Korma.",
-    "image": "prawnKorma.jpg"
+    "image": "prawnKorma.jpg",
+    "isAvailable":true
   },
   {
     "name": "Fish Curry",
     "price": 159,
     "category": "Curries",
     "description": "Fish Curry.",
-    "image": "fishCurry.jpg"
+    "image": "fishCurry.jpg",
+    "isAvailable":true
   },
   {
     "name": "Panner Korma",
     "price": 89,
     "category": "Curries",
     "description": "Panner Korma.",
-    "image": "pannerCurry.jpg"
+    "image": "pannerCurry.jpg",
+    "isAvailable":true
   },
   {
     "name": "Vegetable Curry",
     "price": 89,
     "category": "Curries",
     "description": "Vegetable Curry.",
-    "image": "vegetableCurry.jpg"
+    "image": "vegetableCurry.jpg",
+    "isAvailable":true
   },
   {
     "name": "Vegetable Korma",
     "price": 89,
     "category": "Curries",
     "description": "Vegetable Korma.",
-    "image": "vegetableKorma.jpg"
+    "image": "vegetableKorma.jpg",
+    "isAvailable":true
   }
 ]
