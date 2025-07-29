@@ -1,79 +1,111 @@
 [
   {
+    "id": "chickenBiryani",
     "name": "Chicken Biryani",
     "price": 109,
     "category": "Biryani",
     "description": "basmati rice cooked with tender meat and spices.",
-    "image": "biryaniChicken.jpg"
+    "image": "biryaniChicken.jpg",
+    "isAvailable":true, 
+    "isVisible":false
   },
   {
+    "id": "hyderabadiChickenBiryani",
     "name": "Hyderabadi Chicken Biryani",
     "price": 109,
     "category": "Biryani",
     "description": "hyderabadiBiryaniChicken meat and spices.",
-    "image": "hyderabadiBiryaniChicken.jpg"
+    "image": "hyderabadiBiryaniChicken.jpg",
+    "isAvailable":true, 
+    "isVisible":false
   },
   {
+    "id": "dindigulChickenBiryani",
     "name": "Dindigul Chicken Biryani",
     "price": 109,
     "category": "Biryani",
     "description": "dindigulBiriyani meat and spices.",
-    "image": "dindigulBiriyaniChicken.jpg"
+    "image": "dindigulBiriyaniChicken.jpg",
+    "isAvailable":true, 
+    "isVisible":true
   },
   {
+    "id": "lambBiryani",
     "name": "Lamb Biryani",
     "price": 109,
     "category": "Biryani",
     "description": "basmati rice cooked with tender meat and spices.",
-    "image": "biryaniLamb.jpg"
+    "image": "biryaniLamb.jpg",
+    "isAvailable":true, 
+    "isVisible":true
   },
   {
+    "id": "hyderabadiLambBiryani",
     "name": "Hyderabadi Lamb Biryani",
     "price": 109,
     "category": "Biryani",
     "description": "Hyderabadi Biryani Lamb meat and spices.",
-    "image": "hyderabadiBiryaniLamb.jpg"
+    "image": "hyderabadiBiryaniLamb.jpg",
+    "isAvailable":true, 
+    "isVisible":true
   },
   {
+    "id": "dindigulLambBiryani",
     "name": "Dindigul Lamb Biryani",
     "price": 109,
     "category": "Biryani",
     "description": "Dindigul Biriyani Lamb meat and spices.",
-    "image": "dindigulBiriyaniLamb.jpg"
+    "image": "dindigulBiriyaniLamb.jpg",
+    "isAvailable":true, 
+    "isVisible":true
   },
   {
+    "id": "fishBiryani",
     "name": "Fish Biryani",
     "price": 109,
     "category": "Biryani",
     "description": "basmati rice cooked with tender meat and spices.",
-    "image": "biryaniFish.jpg"
+    "image": "biryaniFish.jpg",
+    "isAvailable":true, 
+    "isVisible":true
   },
   {
+    "id": "prawnBiryani",
     "name": "Prawn Biryani",
     "price": 109,
     "category": "Biryani",
     "description": "basmati rice cooked with tender meat and spices.",
-    "image": "biryaniPrawn.jpg"
+    "image": "biryaniPrawn.jpg",
+    "isAvailable":true, 
+    "isVisible":true
   },
   {
+    "id": "vegBiryani",
     "name": "Veg Biryani",
     "price": 109,
     "category": "Biryani",
     "description": "basmati rice cooked with tender vegetables and spices.",
-    "image": "biryaniVeg.jpg"
+    "image": "biryaniVeg.jpg",
+    "isAvailable":true, 
+    "isVisible":true
   },
   {
+    "id": "pannerBiryani",
     "name": "Panner Biryani",
     "price": 109,
     "category": "Biryani",
     "description": "basmati rice cooked with tender panner and spices.",
-    "image": "biryaniPanner.jpg"
+    "image": "biryaniPanner.jpg",
+    "isAvailable":false
   },
   {
+    "id": "mealMakerBiryani",
     "name": "Meal Maker Biryani",
     "price": 109,
     "category": "Biryani",
     "description": "basmati rice cooked with tender MealMaker and spices.",
-    "image": "biryaniMealMaker.jpg"
+    "image": "biryaniMealMaker.jpg",
+    "isAvailable":true, 
+    "isVisible":true
   }
 ]

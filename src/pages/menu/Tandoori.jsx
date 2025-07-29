@@ -1,4 +1,5 @@
 import TandooriItems from "../../assets/configuration/tandooriItems.json";
+import FoodItemGrid from "../../components/FoodItemGrid";
 import './css/FoodMenu.css'
 import ChickenTandoori from '../../assets/tandoori/chickenTandoori.jpeg';
 import LambKebabs from '../../assets/tandoori/lambKebabs.jpeg';
@@ -59,7 +60,12 @@ const Tandoori = ({ cart, setCart }) => {
     return (
         <div className="food-item-container">
             <h2 className="food-item-section">Tandoori Specials</h2>
-            {renderItems()}
+            <FoodItemGrid
+                items={TandooriItems}
+                category="Tandoori"
+                onAddToCart={handleAddToCart}
+                localImages={localImages}
+            />
         </div>
     );
 };
