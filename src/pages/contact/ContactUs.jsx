@@ -27,12 +27,12 @@ const ContactUs = () => {
     return (
         <div className="contact-container">
             <h2>Contact Us</h2>
-            <p>We’d love to hear from you! Whether it’s feedback, questions, or a special request, drop us a message.</p>
+            <p>We would love to hear from you! Whether it is feedback, questions, or a special request, drop us a message.</p>
 
             {submitted ? (
                 <div className="thank-you">
                     <h3>Thank you!</h3>
-                    <p>Your message has been sent. We’ll get back to you soon.</p>
+                    <p>Your message has been sent. Weï¿½ll get back to you soon.</p>
                 </div>
             ) : (
                 <form onSubmit={handleSubmit} className="contact-form">

@@ -6,8 +6,7 @@ const images = [
     { id: 2, src: 'https://images.unsplash.com/photo-1525755662778-989d0524087e?auto=format&fit=crop&w=800&q=80', alt: 'Fresh ingredients' },
     { id: 3, src: 'https://images.unsplash.com/photo-1499028344343-cd173ffc68a9?auto=format&fit=crop&w=800&q=80', alt: 'Kitchen chefs' },
     { id: 4, src: 'https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=800&q=80', alt: 'Tasty dessert' },
-    { id: 5, src: 'https://images.unsplash.com/photo-1523983305963-83b9ca7f0e7c?auto=format&fit=crop&w=800&q=80', alt: 'Ready takeaway' },
-    { id: 6, src: 'https://images.unsplash.com/photo-1551218808-94e220e084d2?auto=format&fit=crop&w=800&q=80', alt: 'Happy customers' },
+    { id: 5, src: 'https://images.unsplash.com/photo-1551218808-94e220e084d2?auto=format&fit=crop&w=800&q=80', alt: 'Happy customers' },
 ];
 
 const Gallery = () => {
