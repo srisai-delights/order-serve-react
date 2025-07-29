@@ -17,6 +17,7 @@ const getOrderSummary = (cart) => {
 
 const Checkout = ({ cart, setCart }) => {
     const [orderPlaced, setOrderPlaced] = useState(false);
+    const [email, setEmail] = useState("");
     const navigate = useNavigate();
 
     const getTotal = () =>
@@ -24,10 +25,32 @@ const Checkout = ({ cart, setCart }) => {
 
     const orderSummary = getOrderSummary(cart);
 
-    const handleCheckout = () => {
-        setOrderPlaced(true);
-        setCart([]);
-        setTimeout(() => navigate("/"), 2000);
+    const handleCheckout = async () => {
+        if (!email || !email.includes("@")) {
+            alert("Please enter a valid email address.");
+            return;
+        }
+
+        try {
+            // await fetch("http://localhost:7030/api/Send", {
+            //     method: "POST",
+            //     headers: {
+            //         "Content-Type": "application/json",
+            //     },
+            //     body: JSON.stringify({
+            //         email: email,
+            //         cart: orderSummary,
+            //         total: getTotal(),
+            //     }),
+            // });
+
+            setOrderPlaced(true);
+            setCart([]);
+            setTimeout(() => navigate("/"), 2000);
+        } catch (error) {
+            console.error("Error placing order:", error);
+            alert("Failed to place order. Please try again.");
+        }
     };
 
     const renderOrderSummaryTable = () => (
@@ -89,10 +112,20 @@ const Checkout = ({ cart, setCart }) => {
             ) : (
                 <>
                     {renderOrderSummaryTable()}
-                    <div className="checkout-total">
-                        <button className="checkout-button" onClick={handleCheckout}>
-                            Place Order
-                        </button>
+                    <div className="checkout-form">
+                        <input
+                            type="email"
+                            className="email-input"
+                            placeholder="Enter your email address"
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)}
+                            required
+                        />
+                        <div className="checkout-total">
+                            <button className="checkout-button" onClick={handleCheckout}>
+                                Place Order
+                            </button>
+                        </div>
                     </div>
                 </>
             )}
