@@ -8,9 +8,11 @@ import Support from "./Support";
 const Contact = () => {
     return (
         <div>
-            <ContactUs />
-            <Feedback />
             <Support />
+            <div className="contact-row">
+                <ContactUs />
+                <Feedback />
+            </div>
         </div>
     );
 };
