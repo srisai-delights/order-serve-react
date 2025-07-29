@@ -45,8 +45,8 @@ const Checkout = ({ cart, setCart }) => {
             // });
 
             setOrderPlaced(true);
-            setCart([]);
             setTimeout(() => navigate("/"), 2000);
+            setCart([]);
         } catch (error) {
             console.error("Error placing order:", error);
             alert("Failed to place order. Please try again.");
