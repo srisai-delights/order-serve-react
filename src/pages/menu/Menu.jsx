@@ -6,15 +6,15 @@ import Desserts from './Desserts';
 import Snacks from './Snacks';
 import Tandoori from './Tandoori';
 
-function Menu() {
+function Menu({ cart, setCart }) {
     return (
         <>
-            <Biryani />
-            <Beverages />
-            <Curries />
-            <Desserts />
-            <Snacks />
-            <Tandoori />
+            <Biryani  cart={cart} setCart={setCart}/>
+            <Beverages  cart={cart} setCart={setCart}/>
+            <Curries  cart={cart} setCart={setCart} />
+            <Desserts  cart={cart} setCart={setCart}/>
+            <Snacks  cart={cart} setCart={setCart}/>
+            <Tandoori  cart={cart} setCart={setCart}/>
         </>
     );
 }

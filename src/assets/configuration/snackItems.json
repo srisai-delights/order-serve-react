@@ -1,86 +1,122 @@
 [
   {
+    "id": "chickenRoll",
     "name": "Chicken Roll",
     "price": 49,
     "category": "Snacks",
     "description": "chicken Roll 1pcs.",
-    "image": "chickenRoll.jpg"
+    "image": "chickenRoll.jpg",
+    "isAvailable":true, 
+    "isVisible":true
   },
   {
+    "id": "chilliBajji",
     "name": "Chilli Bajji",
     "price": 49,
     "category": "Snacks",
     "description": "Chilli Bajji 2pcs.",
-    "image": "chilliBajji.jpg"
+    "image": "chilliBajji.jpg",
+    "isAvailable":true, 
+    "isVisible":true
   },
   {
+    "id": "eggPuffs",
     "name": "Egg Puffs",
     "price": 49,
     "category": "Snacks",
     "description": "Egg Puffs 2pcs.",
-    "image": "eggPuffs.jpg"
+    "image": "eggPuffs.jpg",
+    "isAvailable":true, 
+    "isVisible":true
   },
   {
+    "id": "lambRoll",
     "name": "Lamb Roll",
     "price": 49,
     "category": "Snacks",
     "description": "Lamb Roll 1pcs.",
-    "image": "lambRoll.jpg"
+    "image": "lambRoll.jpg",
+    "isAvailable":true, 
+    "isVisible":true
   },
   {
+    "id": "murrukku",
     "name": "Murrukku",
     "price": 49,
     "category": "Snacks",
     "description": "Murrukku 2pcs.",
-    "image": "murukku.jpg"
+    "image": "murukku.jpg",
+    "isAvailable":true, 
+    "isVisible":true
   },
   {
+    "id": "onionBajji",
     "name": "Onion Bajji",
     "price": 49,
     "category": "Snacks",
     "description": "Onion Bajji 2pcs.",
-    "image": "onionBajji.jpg"
+    "image": "onionBajji.jpg",
+    "isAvailable":true, 
+    "isVisible":true
   },
   {
+    "id": "potatoBajji",
     "name": "Potato Bajji",
     "price": 49,
     "category": "Snacks",
     "description": "Potato Bajji 2pcs.",
-    "image": "potatoBajji.jpg"
+    "image": "potatoBajji.jpg",
+    "isAvailable":true, 
+    "isVisible":true
   },
   {
+    "id": "chickenSamosa",
     "name": "Chicken Samosa",
     "price": 49,
     "category": "Snacks",
     "description": "Chicken Samosa 2pcs.",
-    "image": "samosaChicken.jpg"
+    "image": "samosaChicken.jpg",
+    "isAvailable":true, 
+    "isVisible":true
   },
   {
+    "id": "samosa",
     "name": "Samosa",
     "price": 49,
     "category": "Snacks",
     "description": "Samosa 2pcs",
-    "image": "samosaVeg.jpg"
+    "image": "samosaVeg.jpg",
+    "isAvailable":true, 
+    "isVisible":true
   },
   {
+    "id": "lambSamosa",
     "name": "Lamb Samosa",
     "price": 49,
     "category": "Snacks",
     "description": "Lamb Samosa 2pcs",
-    "image": "samosaLamb.jpg"
+    "image": "samosaLamb.jpg",
+    "isAvailable":true, 
+    "isVisible":true
   },
   {
+    "id": "springRoll",
     "name": "Spring Roll",
     "price": 49,
     "category": "Snacks",
     "description": "Spring Roll 2pcs",
-    "image": "springRoll.jpg"
+    "image": "springRoll.jpg",
+    "isAvailable":true, 
+    "isVisible":true
   },
   {
+    "id": "thattai",
     "name": "Thattai",
     "price": 49,
     "category": "Snacks",
     "description": "Thattai 4 pcs",
-    "image": "thattai.jpg"
+    "image": "thattai.jpg",
+    "isAvailable":true, 
+    "isVisible":true
   }
 ]

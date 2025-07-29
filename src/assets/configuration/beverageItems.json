@@ -1,51 +1,72 @@
 [
   {
+    "id": "filterCoffee",
     "name": "Filter Coffee",
     "price": 49,
     "category": "Beverages",
     "description": "Filter Coffee.",
-    "image": "filterCoffee.jpg"
+    "image": "filterCoffee.jpg",
+    "isAvailable":true, 
+    "isVisible":true
   },
   {
+    "id": "greenTea",
     "name": "Green Tea",
     "price": 49,
     "category": "Beverages",
     "description": "Green Tea.",
-    "image": "greenTea.jpg"
+    "image": "greenTea.jpg",
+    "isAvailable":true, 
+    "isVisible":true
   },
   {
+    "id": "lassi",
     "name": "Lassi",
     "price": 49,
     "category": "Beverages",
     "description": "Lassi.",
-    "image": "lassi.jpg"
+    "image": "lassi.jpg",
+    "isAvailable":true, 
+    "isVisible":true
   },
   {
+    "id": "mangoLassi",
     "name": "Mango Lassi",
     "price": 49,
     "category": "Beverages",
     "description": "Mango Lassi.",
-    "image": "mangoLassi.jpg"
+    "image": "mangoLassi.jpg",
+    "isAvailable":true, 
+    "isVisible":true
   },
   {
+    "id": "mangoMilkShake",
     "name": "Mango MilkShake",
     "price": 49,
     "category": "Beverages",
     "description": "Mango MilkShake.",
-    "image": "mangoMilkShake.jpg"
+    "image": "mangoMilkShake.jpg",
+    "isAvailable":true, 
+    "isVisible":true
   },
   {
+    "id": "masalaChai",
     "name": "Masala Chai",
     "price": 49,
     "category": "Beverages",
     "description": "Masala Chai.",
-    "image": "masalaChai.jpg"
+    "image": "masalaChai.jpg",
+    "isAvailable":true, 
+    "isVisible":true
   },
   {
+    "id": "mojito",
     "name": "Mojito",
     "price": 49,
     "category": "Beverages",
     "description": "Mojito.",
-    "image": "mojito.jpg"
+    "image": "mojito.jpg",
+    "isAvailable":true,
+     "isVisible":true
   }
 ]

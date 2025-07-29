@@ -51,7 +51,7 @@ function ViewRenderer({ cart, setCart }) {
 
 
         case "/menu":
-            return <Menu />;
+            return <Menu  cart={cart} setCart={setCart}/>;
         case "/menu/biryani":
             return <Biryani cart={cart} setCart={setCart} />;
         case "/menu/beverages":
