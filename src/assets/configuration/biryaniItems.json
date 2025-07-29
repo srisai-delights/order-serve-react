@@ -7,7 +7,7 @@
     "description": "basmati rice cooked with tender meat and spices.",
     "image": "biryaniChicken.jpg",
     "isAvailable":true, 
-    "isVisible":false
+    "isVisible":true
   },
   {
     "id": "hyderabadiChickenBiryani",
@@ -17,7 +17,7 @@
     "description": "hyderabadiBiryaniChicken meat and spices.",
     "image": "hyderabadiBiryaniChicken.jpg",
     "isAvailable":true, 
-    "isVisible":false
+    "isVisible":true
   },
   {
     "id": "dindigulChickenBiryani",
@@ -27,7 +27,7 @@
     "description": "dindigulBiriyani meat and spices.",
     "image": "dindigulBiriyaniChicken.jpg",
     "isAvailable":true, 
-    "isVisible":true
+    "isVisible":false
   },
   {
     "id": "lambBiryani",
