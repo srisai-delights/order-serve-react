@@ -4,7 +4,7 @@
     "name": "Chicken Roll",
     "price": 49,
     "category": "Snacks",
-    "description": "chicken Roll 1pcs.",
+    "description": "Chicken Roll 1pcs.",
     "image": "chickenRoll.jpg",
     "isAvailable":true, 
     "isVisible":true
