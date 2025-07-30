@@ -4,13 +4,13 @@
     background-color: hsl(10, 80%, 95%);
     color: #333;
     font-family: 'Segoe UI', sans-serif;
-    padding: 60px 20px;
-    max-width: 900px;
-    margin: 0 auto;
+    padding: 20px 10px;
+    margin-left: 30px;
+    max-width: auto;
 }
 
 .ourstory-header {
-    text-align: center;
+    text-align: left;
     margin-bottom: 40px;
 }
 
@@ -29,6 +29,7 @@
     display: flex;
     gap: 40px;
     margin-bottom: 50px;
+    margin-left: 20px;
     align-items: center;
     flex-wrap: wrap;
 }
@@ -50,7 +51,7 @@
 }
 
 .ourstory-values {
-    text-align: center;
+    text-align: left;
     margin-bottom: 50px;
 }
 
@@ -68,6 +69,8 @@
 
         .ourstory-values ul li {
             margin-bottom: 12px;
+            color: #555;
+
         }
 
 /* Footer */

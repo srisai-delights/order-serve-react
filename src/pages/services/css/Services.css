@@ -3,6 +3,7 @@
     padding: 20px;
     max-width: auto;
     margin: 0 auto;
+    background-color: hsl(10, 80%, 95%);
 }
 
 .hero {

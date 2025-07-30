@@ -1,7 +1,7 @@
 .welcome-container {
     height: 100%;
     width:100%;
-    background-color: hsl(10, 80%, 95%);
+    background-color: hsl(10, 80%, 95%); 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,7 +14,8 @@
 .welcome-content {
     /*max-width: 500px;*/
     width: 100%;
-    background-color: hsl(10, 80%, 95%);
+    /* background-color: hsl(10, 80%, 95%); */
+    background-color: #fef7f6;
     padding: 40px 30px;
     border-radius: 16px;
 }
