@@ -7,14 +7,8 @@ import OurStory from "./OurStory";
 const About = () => {
     return (
         <div className="about-us">
-            <section className="hero">
-                <h1>Welcome to Sri Sai Delights!</h1>
-                <p>Your one-stop shop for delicious homemade meals delivered to your doorsteps.</p>
-            </section>
-
             <OurMission />
             <OurStory />
-
             <section className="why-us">
                 <h2>Why Choose Us?</h2>
                 <ul>

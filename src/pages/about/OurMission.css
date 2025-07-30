@@ -4,10 +4,10 @@
     background-color: hsl(10, 80%, 95%);
     color: #333;
     font-family: 'Segoe UI', sans-serif;
-    max-width: 800px;
-    margin: 60px auto;
-    padding: 40px 20px;
-    text-align: center;
+    max-width: auto;
+    padding: 20px 10px;
+    text-align: left;
+    margin-left: 30px;
 }
 
 .ourmission-header h1 {

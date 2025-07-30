@@ -57,6 +57,16 @@ const ContactUs = () => {
                         />
                     </label>
                     <label>
+                        Location:
+                        <input
+                            type="text"
+                            name="location"
+                            value={formData.email}
+                            onChange={handleChange}
+                            required
+                        />
+                    </label>
+                    <label>
                         Message:
                         <textarea
                             name="message"
