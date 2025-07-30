@@ -68,5 +68,15 @@
     "image": "mojito.jpg",
     "isAvailable":true,
      "isVisible":true
+  },
+  {
+    "id": "cardamomTea",
+    "name": "cardamom Tea",
+    "price": 49,
+    "category": "Beverages",
+    "description": "Tea.",
+    "image": "cardamomTea.jpeg",
+    "isAvailable":true, 
+    "isVisible":true
   }
 ]

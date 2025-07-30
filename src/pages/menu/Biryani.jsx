@@ -12,6 +12,8 @@ import PrawnBiryani from '../../assets/biryani/prawn.jpg';
 import VegBiryani from '../../assets/biryani/vegetable.jpg';
 import PannerBiryani from '../../assets/biryani/panner.jpg';
 import MealMakerBiryani from '../../assets/biryani/mealMaker.jpg';
+import EggBiryani from '../../assets/biryani/eggBiryani.jpg';
+import MushroomBiryani from '../../assets/biryani/mushroomBiryani.jpeg';
 
 const localImages = {
     "biryaniChicken.jpg": ChickenBiryani,
@@ -25,6 +27,8 @@ const localImages = {
     "biryaniVeg.jpg": VegBiryani,
     "biryaniPanner.jpg": PannerBiryani,
     "biryaniMealMaker.jpg": MealMakerBiryani,
+    "eggBiryani.jpg": EggBiryani,
+    "mushroomBiryani.jpg": MushroomBiryani
 };
 
 const Biryani = ({ cart, setCart }) => {

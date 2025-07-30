@@ -28,5 +28,26 @@
     "image": "pannerTandoori.jpg",
     "isAvailable":true, 
     "isVisible":true
+  },
+  {
+    "id": "fishTandoori",
+    "name": "Fish Tandoori",
+    "price": 89,
+    "category": "Tandoori",
+    "description": "Fish Tandoori 1pcs.",
+    "image": "fishTandoori.jpg",
+    "isAvailable":true, 
+    "isVisible":true
+  },
+  {
+    "id": "grillChicken",
+    "name": "Grill Chicken",
+    "price": 49,
+    "category": "Tandoori",
+    "description": "Juicy chicken grilled with herbs and spices.",
+    "image": "grillChicken.jpg",
+    "isAvailable":true, 
+    "isVisible":true
   }
+
 ]
