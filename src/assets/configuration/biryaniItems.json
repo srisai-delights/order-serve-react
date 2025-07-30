@@ -4,7 +4,7 @@
     "name": "Chicken Biryani",
     "price": 109,
     "category": "Biryani",
-    "description": "basmati rice cooked with tender meat and spices.",
+    "description": "Basmati rice with tender meat and spices.",
     "image": "biryaniChicken.jpg",
     "isAvailable":true, 
     "isVisible":true
@@ -14,7 +14,7 @@
     "name": "Hyderabadi Chicken Biryani",
     "price": 109,
     "category": "Biryani",
-    "description": "hyderabadiBiryaniChicken meat and spices.",
+    "description": "Basmati rice with tender meat and spices.",
     "image": "hyderabadiBiryaniChicken.jpg",
     "isAvailable":true, 
     "isVisible":true
@@ -24,7 +24,7 @@
     "name": "Dindigul Chicken Biryani",
     "price": 109,
     "category": "Biryani",
-    "description": "dindigulBiriyani meat and spices.",
+    "description": "Seeraga samba rice with tender meat and spices.",
     "image": "dindigulBiriyaniChicken.jpg",
     "isAvailable":true, 
     "isVisible":false
@@ -34,7 +34,7 @@
     "name": "Lamb Biryani",
     "price": 109,
     "category": "Biryani",
-    "description": "basmati rice cooked with tender meat and spices.",
+    "description": "Basmati rice cooked with tender meat and spices.",
     "image": "biryaniLamb.jpg",
     "isAvailable":true, 
     "isVisible":true
@@ -44,7 +44,7 @@
     "name": "Hyderabadi Lamb Biryani",
     "price": 109,
     "category": "Biryani",
-    "description": "Hyderabadi Biryani Lamb meat and spices.",
+    "description": "Basmati rice with teander meat and spices.",
     "image": "hyderabadiBiryaniLamb.jpg",
     "isAvailable":true, 
     "isVisible":true
@@ -54,7 +54,7 @@
     "name": "Dindigul Lamb Biryani",
     "price": 109,
     "category": "Biryani",
-    "description": "Dindigul Biriyani Lamb meat and spices.",
+    "description": "Seeraga samba rice with tender meat and spices",
     "image": "dindigulBiriyaniLamb.jpg",
     "isAvailable":true, 
     "isVisible":true
@@ -64,7 +64,7 @@
     "name": "Fish Biryani",
     "price": 109,
     "category": "Biryani",
-    "description": "basmati rice cooked with tender meat and spices.",
+    "description": "Basmati rice with tender meat and spices.",
     "image": "biryaniFish.jpg",
     "isAvailable":true, 
     "isVisible":true
@@ -74,7 +74,7 @@
     "name": "Prawn Biryani",
     "price": 109,
     "category": "Biryani",
-    "description": "basmati rice cooked with tender meat and spices.",
+    "description": "Basmati rice with tender meat and spices.",
     "image": "biryaniPrawn.jpg",
     "isAvailable":true, 
     "isVisible":true
@@ -84,7 +84,7 @@
     "name": "Veg Biryani",
     "price": 109,
     "category": "Biryani",
-    "description": "basmati rice cooked with tender vegetables and spices.",
+    "description": "Basmati rice with fresh vegetables and spices.",
     "image": "biryaniVeg.jpg",
     "isAvailable":true, 
     "isVisible":true
@@ -94,17 +94,38 @@
     "name": "Panner Biryani",
     "price": 109,
     "category": "Biryani",
-    "description": "basmati rice cooked with tender panner and spices.",
+    "description": "Basmati rice with soft panner and spices.",
     "image": "biryaniPanner.jpg",
-    "isAvailable":false
+    "isAvailable":true,
+    "isVisible":true
   },
   {
     "id": "mealMakerBiryani",
     "name": "Meal Maker Biryani",
     "price": 109,
     "category": "Biryani",
-    "description": "basmati rice cooked with tender MealMaker and spices.",
+    "description": "Basmati rice with juicy MealMaker and spices.",
     "image": "biryaniMealMaker.jpg",
+    "isAvailable":true, 
+    "isVisible":true
+  },
+  {
+    "id": "eggBiryani",
+    "name": "Egg Biryani",
+    "price": 109,
+    "category": "Biryani",
+    "description": "Basmati rice with boiled eggs and spices.",
+    "image": "eggBiryani.jpg",
+    "isAvailable":true, 
+    "isVisible":true
+  },
+  {
+    "id": "mushroomBiryani",
+    "name": "Mushroom Biryani",
+    "price": 109,
+    "category": "Biryani",
+    "description": "Aromatic biryani with mushrooms.",
+    "image": "mushroomBiryani.jpg",
     "isAvailable":true, 
     "isVisible":true
   }

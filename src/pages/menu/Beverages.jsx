@@ -8,6 +8,7 @@ import MangoLassi from '../../assets/beverages/mangoLassi.jpeg';
 import MangoMilkShake from '../../assets/beverages/mangoMilkShake.jpeg';
 import MasalaChai from '../../assets/beverages/masalaChai.jpeg';
 import Mojito from '../../assets/beverages/mojito.jpeg';
+import CardamomTea from '../../assets/beverages/cardamomTea.jpeg';
 
 
 const localImages = {
@@ -17,7 +18,8 @@ const localImages = {
     "mangoLassi.jpg": MangoLassi,
     "mangoMilkShake.jpg": MangoMilkShake,
     "masalaChai.jpg": MasalaChai,
-    "mojito.jpg": Mojito
+    "mojito.jpg": Mojito,
+    "cardamomTea.jpeg": CardamomTea
 };
 
 const Beverages = ({ cart, setCart }) => {
