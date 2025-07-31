@@ -55,6 +55,32 @@
     align-content:center;
 }
 
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: hsl(0, 4%, 5%);
+}
+
+.quantity-controls button {
+    background-color:hsl(12, 57%, 85%);
+    color: black;
+    border: none;
+    border-radius: 4px;
+    padding: 4px 10px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.quantity-controls button:hover {
+    background-color: #e05500;
+}
+
+.quantity-controls span {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
 .food-item-image-container {
     position: relative;
     width: 100%;
@@ -78,7 +104,7 @@
     text-transform: uppercase;
     pointer-events: none;
     z-index: 2;
-    backdrop-filter: blur(1.5px); 
+    backdrop-filter: blur(1.5px);
 }
 
 .food-item-details {

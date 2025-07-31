@@ -3,27 +3,37 @@ import { useNavigate } from "react-router-dom";
 import "..//pages/menu/Menu.css";
 import "./Checkout.css";
 
-const getOrderSummary = (cart) => {
-    const summary = {};
-    cart.forEach(item => {
-        if (!summary[item.id]) {
-            summary[item.id] = { ...item, quantity: 1 };
-        } else {
-            summary[item.id].quantity += 1;
-        }
-    });
-    return Object.values(summary);
-};
-
 const Checkout = ({ cart, setCart }) => {
     const [orderPlaced, setOrderPlaced] = useState(false);
     const [email, setEmail] = useState("");
     const navigate = useNavigate();
 
-    const getTotal = () =>
-        cart.reduce((sum, item) => sum + parseFloat(item.price), 0).toFixed(2);
+    const increaseQuantity = (item) => {
+        setCart(prev =>
+            prev.map(ci =>
+                ci.id === item.id && ci.quantity < 10
+                    ? { ...ci, quantity: ci.quantity + 1 }
+                    : ci
+            )
+        );
+    };
 
-    const orderSummary = getOrderSummary(cart);
+    const decreaseQuantity = (item) => {
+        setCart(prev =>
+            prev.map(ci =>
+                ci.id === item.id && ci.quantity > 1
+                    ? { ...ci, quantity: ci.quantity - 1 }
+                    : ci
+            )
+        );
+    };
+
+    const removeFromCart = (item) => {
+        setCart(prev => prev.filter(ci => ci.id !== item.id));
+    };
+
+    const getTotal = () =>
+        cart.reduce((sum, item) => sum + item.quantity * parseFloat(item.price), 0).toFixed(2);
 
     const handleCheckout = async () => {
         if (!email || !email.includes("@")) {
@@ -32,6 +42,7 @@ const Checkout = ({ cart, setCart }) => {
         }
 
         try {
+            // Uncomment this for live API integration
             // await fetch("http://localhost:7030/api/Send", {
             //     method: "POST",
             //     headers: {
@@ -39,7 +50,7 @@ const Checkout = ({ cart, setCart }) => {
             //     },
             //     body: JSON.stringify({
             //         email: email,
-            //         cart: orderSummary,
+            //         cart: cart,
             //         total: getTotal(),
             //     }),
             // });
@@ -59,25 +70,49 @@ const Checkout = ({ cart, setCart }) => {
             <table className="summary-table">
                 <thead>
                     <tr>
-                        <th>Image</th>
+                        {/* <th>Image</th> */}
                         <th>Item</th>
                         <th>Description</th>
                         <th>Qty</th>
                         <th>Price</th>
                         <th>Subtotal</th>
+                        <th></th>
                     </tr>
                 </thead>
                 <tbody>
-                    {orderSummary.map(item => (
+                    {cart.map(item => (
                         <tr key={item.id}>
-                            <td>
+                            {/* <td>
                                 <img src={item.image} alt={item.name} className="summary-image" />
-                            </td>
+                            </td> */}
                             <td>{item.name}</td>
                             <td>{item.description}</td>
-                            <td className="center">{item.quantity}</td>
+                            <td className="center">
+                                <div className="checkout-quantity-controls">
+                                    <button
+                                        onClick={() => decreaseQuantity(item)}
+                                        disabled={item.quantity <= 1}
+                                    >
+                                        −
+                                    </button>
+                                    <span>{item.quantity}</span>
+                                    <button
+                                        onClick={() => increaseQuantity(item)}
+                                        disabled={item.quantity >= 10}
+                                    >
+                                        +
+                                    </button>
+                                </div>
+                            </td>
                             <td className="right">₹{item.price}</td>
-                            <td className="right">₹{(item.quantity * parseFloat(item.price)).toFixed(2)}</td>
+                            <td className="right">
+                                ₹{(item.quantity * parseFloat(item.price)).toFixed(2)}
+                            </td>
+                            <td className="center">
+                                <button className="delete-button" onClick={() => removeFromCart(item)}>
+                                    🗑️
+                                </button>
+                            </td>
                         </tr>
                     ))}
                 </tbody>
@@ -85,6 +120,7 @@ const Checkout = ({ cart, setCart }) => {
                     <tr>
                         <td colSpan={5} className="right bold">Total</td>
                         <td className="right bold">₹{getTotal()}</td>
+                        <td></td>
                     </tr>
                 </tfoot>
             </table>

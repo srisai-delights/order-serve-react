@@ -107,7 +107,13 @@ tfoot td {
     border-collapse: collapse;
 }
 
-    .summary-table th,
+    .summary-table th
+    {
+        text-align: center;
+        padding: 6px;
+        color: #080808;
+
+    }
     .summary-table td {
         padding: 6px;
         text-align: left;
@@ -167,3 +173,35 @@ tfoot td {
     align-items: center;
 }
 
+.checkout-quantity-controls {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.checkout-quantity-controls button {
+    padding: 2px 8px;
+    font-size: 1rem;
+    background-color: #ff6600;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.checkout-quantity-controls button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.delete-button {
+    background-color: transparent;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: #c00;
+}
+
+.delete-button:hover {
+    color: #f00;
+}
