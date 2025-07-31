@@ -93,7 +93,7 @@
 
 .cart-icon {
     font-size: 2rem;
-    margin-right: 50px;
+    margin-right: 20px;
 }
 
 .cart-icon-container {
@@ -116,5 +116,5 @@
     font-weight: bold;
     min-width: 32px;
     text-align: center;
-    margin-right: 50px;
+    margin-right: 20px;
 }
