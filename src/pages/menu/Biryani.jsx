@@ -1,4 +1,5 @@
 import './css/FoodMenu.css'
+import FoodItemGridCart from "../../components/FoodItemGridCart";
 import FoodItemGrid from "../../components/FoodItemGrid";
 import BiryaniItems from "../../assets/configuration/biryaniItems.json";
 import ChickenBiryani from '../../assets/biryani/chicken.jpg';
@@ -34,7 +35,30 @@ const localImages = {
 const Biryani = ({ cart, setCart }) => {
 
     const handleAddToCart = (item) => {
-        setCart([...cart, item]);
+        setCart(prev => {
+            const existing = prev.find(ci => ci.id === item.id);
+            if (existing) {
+                return prev.map(ci =>
+                    ci.id === item.id ? { ...ci, quantity: ci.quantity + 1 } : ci
+                );
+            }
+            return [...prev, { ...item, quantity: 1 }];
+        });
+    };
+
+    const handleRemoveFromCart = (item) => {
+        setCart(prev => {
+            const existing = prev.find(ci => ci.id === item.id);
+            if (!existing) return prev;
+
+            if (existing.quantity === 1) {
+                return prev.filter(ci => ci.id !== item.id);
+            }
+
+            return prev.map(ci =>
+                ci.id === item.id ? { ...ci, quantity: ci.quantity - 1 } : ci
+            );
+        });
     };
 
     const getCartTotal = () => {
@@ -45,11 +69,13 @@ const Biryani = ({ cart, setCart }) => {
     return (
         <div className="food-item-container">
             <h2 className="food-item-section">Biryani Specials</h2>
-            <FoodItemGrid
+            <FoodItemGridCart
                 items={BiryaniItems}
                 category="Biryani"
                 onAddToCart={handleAddToCart}
+                onRemoveFromCart={handleRemoveFromCart}
                 localImages={localImages}
+                cart={cart}
             />
         </div>
     );
