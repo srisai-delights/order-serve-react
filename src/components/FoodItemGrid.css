@@ -7,15 +7,31 @@
 }
 
 .food-item-tile {
-    background: linear-gradient( 180deg, hsl(10, 60%, 70%) 0%, hsl(10, 65%, 75%) 20%, hsl(10, 75%, 85%) 40%, hsl(10, 78%, 88%) 60%, hsl(10, 79%, 89%) 80%, hsl(10, 83%, 93%) 100% );
+    background: linear-gradient(180deg,
+            hsl(10, 60%, 70%) 0%,
+            hsl(10, 65%, 75%) 20%,
+            hsl(10, 75%, 85%) 40%,
+            hsl(10, 78%, 88%) 60%,
+            hsl(10, 79%, 89%) 80%,
+            hsl(10, 83%, 93%) 100%);
     border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     display: flex;
     flex-direction: column;
-    transition: transform 0.2s ease-in-out;
     padding-bottom: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s ease, filter 0.3s ease, opacity 0.3s ease;
+}
+
+.food-item-tile:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.food-item-tile.sold-out {
+    opacity: 0.6;
+    filter: grayscale(30%);
+    position: relative;
 }
 
 .food-item-name {
@@ -25,60 +41,16 @@
     text-align: center;
     margin: 10px 8px 4px;
     padding: 0 6px;
+    width: 100%;
+    box-sizing: border-box;
     word-wrap: break-word;
     white-space: normal;
     overflow-wrap: break-word;
-    width: 100%;
-    box-sizing: border-box;
     display: -webkit-box;
-    -webkit-line-clamp: 1; /* Limit to 1 lines */
+    -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
-}
-
-    .food-item-tile:hover {
-        transform: translateY(-4px);
-        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
-    }
-
-.food-item-image-container {
-    width: 100%;
-    height: 160px;
-    overflow: hidden;
-}
-
-.food-item-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    align-content:center;
-}
-
-.quantity-controls {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    color: hsl(0, 4%, 5%);
-}
-
-.quantity-controls button {
-    background-color:hsl(12, 57%, 85%);
-    color: black;
-    border: none;
-    border-radius: 4px;
-    padding: 4px 10px;
-    font-size: 1rem;
-    cursor: pointer;
-}
-
-.quantity-controls button:hover {
-    background-color: #e05500;
-}
-
-.quantity-controls span {
-    font-size: 1rem;
-    font-weight: bold;
 }
 
 .food-item-image-container {
@@ -88,6 +60,13 @@
     overflow: hidden;
 }
 
+.food-item-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    align-content: center;
+}
+
 .sold-out-overlay {
     position: absolute;
     top: 0;
@@ -95,16 +74,16 @@
     width: 100%;
     height: 100%;
     background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(1.5px);
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 1.4rem;
-    color: rgba(7, 7, 7, 0.7);
     font-weight: bold;
     text-transform: uppercase;
+    color: rgba(7, 7, 7, 0.7);
     pointer-events: none;
     z-index: 2;
-    backdrop-filter: blur(1.5px);
 }
 
 .food-item-details {
@@ -134,12 +113,40 @@
     font-weight: bold;
     color: #e60000;
 }
+
 .food-item-section {
     color: hsl(0, 0%, 20%);
     text-align: center;
-    /*align-content: center;*/
-    border:groove;
+    border: groove;
 }
+
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: hsl(0, 4%, 5%);
+}
+
+.quantity-controls button {
+    background-color: hsl(12, 57%, 85%);
+    color: black;
+    border: none;
+    border-radius: 4px;
+    padding: 4px 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.quantity-controls button:hover {
+    background-color: #e05500;
+}
+
+.quantity-controls span {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
 .cart-button {
     background-color: #007bff;
     color: #fff;
@@ -151,21 +158,16 @@
     transition: background-color 0.2s ease;
 }
 
-    .cart-button:hover {
-        background-color: #0056b3;
-    }
-    .cart-button.sold-out {
+.cart-button:hover {
+    background-color: #0056b3;
+}
+
+.cart-button.sold-out {
     background-color: #ccc;
     color: #666;
     cursor: not-allowed;
     font-weight: bold;
     border: 1px solid #999;
-}
-
-.food-item-tile.sold-out {
-    opacity: 0.6;
-    filter: grayscale(30%);
-    position: relative;
 }
 
 @media (max-width: 600px) {
