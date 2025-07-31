@@ -7,14 +7,14 @@
 }
 
 .navbar {
-    position: absolute;
+    position: sticky;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 1000;
-    background-color: transparent;
+    background-color:  hsl(10, 85%, 95%);;
     color: white;
-    padding: 10px 20px;
+    padding: 5px 30px 2px 2px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -106,8 +106,8 @@
 
 .cart-count {
     position: absolute;
-    top: -8px;
-    right: -12px;
+    top: -2px;
+    right: -15px;
     background: #ff4d4d;
     color: #fff;
     border-radius: 50%;
