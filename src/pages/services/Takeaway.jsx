@@ -8,7 +8,7 @@ const Takeaway = () => {
         <div className="catering-container">
             <header className="hero">
                 <h1>Takeaway Orders</h1>
-                <p>Order ahead and skip the wait – pickup made easy.</p>
+                <p>Order ahead and skip the wait pickup made easy.</p>
                 <Link to="/menu" className="btn">Order for Pickup </Link>
             </header>
 
@@ -39,7 +39,7 @@ const Takeaway = () => {
                     </div>
                     <div className="service-card">
                         <h3>Get Confirmation</h3>
-                        <p>We’ll confirm your pickup slot instantly.</p>
+                        <p>We will confirm your pickup slot instantly.</p>
                     </div>
                     <div className="service-card">
                         <h3>Collect & Enjoy</h3>

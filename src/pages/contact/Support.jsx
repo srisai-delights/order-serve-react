@@ -12,7 +12,7 @@ const Support = () => {
             <section className="support-options">
                 <div className="support-card">
                     <h3>Email Support</h3>
-                    <p>Send us your questions and we'll respond within 24 hours.</p>
+                    <p>Send us your questions and we'll respond as soon as possible.</p>
                     <a href="mailto:srisaidelightssweden@gmail.com" className="btn">Email Us</a>
                 </div>
                 <div className="support-card">
@@ -25,22 +25,6 @@ const Support = () => {
                     <p>Find answers to common questions quickly and easily.</p>
                     <a href="/faq" className="btn">Visit FAQs</a>
                 </div>
-            </section>
-
-            <section className="support-form">
-                <h2>Contact Us</h2>
-                <form>
-                    <label htmlFor="name">Name</label>
-                    <input type="text" id="name" name="name" placeholder="Your full name" required />
-
-                    <label htmlFor="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="your.email@example.com" required />
-
-                    <label htmlFor="message">Message</label>
-                    <textarea id="message" name="message" placeholder="Write your message here" required></textarea>
-
-                    <button type="submit">Send Message</button>
-                </form>
             </section>
         </div>
     );
