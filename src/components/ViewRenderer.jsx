@@ -1,5 +1,5 @@
-import React from "react";
 import { useLocation } from "react-router-dom";
+
 import Home from "../pages/home/Home";
 import Features from "../pages/home/Features";
 import Gallery from "../pages/home/Gallery";
@@ -24,76 +24,71 @@ import About from "../pages/about/About";
 import OurMission from "../pages/about/OurMission";
 import OurStory from "../pages/about/OurStory";
 
-
 import Contact from "../pages/contact/Contact";
 import ContactUs from "../pages/contact/ContactUs";
 import Feedback from "../pages/contact/Feedback";
-import Support from "../pages/contact/Support"
+import Support from "../pages/contact/Support";
+
+const routeComponentMap = {
+  "/": Home,
+  "/home": Home,
+  "/home/features": Features,
+  "/home/gallery": Gallery,
+  "/home/testimonials": Testimonials,
+  "/home/welcome": Welcome,
+
+  "/menu": Menu,
+  "/menu/biryani": Biryani,
+  "/menu/beverages": Beverages,
+  "/menu/curries": Curries,
+  "/menu/desserts": Desserts,
+  "/menu/snacks": Snacks,
+  "/menu/tandoori": Tandoori,
+
+  "/services": Services,
+  "/services/catering": Catering,
+  "/services/takeaway": Takeaway,
+  "/services/delivery": Delivery,
+  "/services/online-ordering": OnlineOrder,
+
+  "/about": About,
+  "/about/our-mission": OurMission,
+  "/about/our-story": OurStory,
+
+  "/contact": Contact,
+  "/contact/contact-us": ContactUs,
+  "/contact/feedback": Feedback,
+  "/contact/support": Support,
+};
 
 function ViewRenderer({ cart, setCart }) {
-    const location = useLocation();
-    const path = location.pathname.toLowerCase();
-    console.log("Current path:", path);
+  const location = useLocation();
+  const path = location.pathname.toLowerCase();
+  console.log("Current path:", path);
 
-    switch (path) {
-        case "/":
-             return <Home />;
-        case "/home":
-            return <Home />;
-        case "/home/features":
-            return <Features />;
-        case "/home/gallery":
-            return <Gallery />;
-        case "/home/testimonials":
-            return <Testimonials />;
-        case "/home/welcome":
-            return <Welcome />;
+  const Component = routeComponentMap[path];
 
+  if (!Component) {
+    return <h2 style={{ padding: "20px" }}>404 - Page Not Found</h2>;
+  }
 
-        case "/menu":
-            return <Menu  cart={cart} setCart={setCart}/>;
-        case "/menu/biryani":
-            return <Biryani cart={cart} setCart={setCart} />;
-        case "/menu/beverages":
-            return <Beverages cart={cart} setCart={setCart} />;
-        case "/menu/curries":
-            return <Curries cart={cart} setCart={setCart} />;
-        case "/menu/desserts":
-            return <Desserts cart={cart} setCart={setCart} />;
-        case "/menu/snacks":
-            return <Snacks cart={cart} setCart={setCart} />;
-        case "/menu/tandoori":
-            return <Tandoori cart={cart} setCart={setCart} />;
+  const needsCart = [
+    "/menu",
+    "/menu/biryani",
+    "/menu/beverages",
+    "/menu/curries",
+    "/menu/desserts",
+    "/menu/snacks",
+    "/menu/tandoori",
+    "/services/catering",
+    "/services/takeaway",
+    "/services/delivery",
+    "/services/online-ordering",
+  ];
 
-        case "/services":
-            return <Services />;
-        case "/services/catering":
-            return <Catering cart={cart} setCart={setCart} />;
-        case "/services/takeaway":
-            return <Takeaway cart={cart} setCart={setCart} />;
-        case "/services/delivery":
-            return <Delivery cart={cart} setCart={setCart} />;
-        case "/services/online-ordering":
-            return <OnlineOrder cart={cart} setCart={setCart} />;
-
-        case "/about":
-            return <About />;
-        case "/about/our-mission":
-            return <OurMission />;
-        case "/about/our-story":
-            return <OurStory />;
-
-        case "/contact":
-            return <Contact />;
-        case "/contact/contact-us":
-            return <ContactUs />;
-        case "/contact/feedback":
-            return <Feedback />;
-        case "/contact/support":
-            return <Support />;
-        default:
-            return <h2 style={{ padding: "20px" }}>404 - Page Not Found</h2>;
-    }
+  return needsCart.includes(path)
+    ? <Component cart={cart} setCart={setCart} />
+    : <Component />;
 }
 
 export default ViewRenderer;
