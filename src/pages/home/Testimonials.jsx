@@ -1,26 +1,29 @@
-import React from 'react';
 import './Testimonials.css';
+import Vishant from '../../assets/vishant.jpg';
+import Viji from '../../assets/viji.jpg';
+import Sree from '../../assets/sree.jpeg';
+
 
 const testimonials = [
     {
         id: 1,
-        name: 'Sarah K.',
+        name: 'Vishant.',
         role: 'Food Lover',
-        photo: 'https://randomuser.me/api/portraits/women/65.jpg',
+        photo: Vishant,
         text: 'SriSai Delights delivers the best food fast! The taste and quality are unmatched.',
     },
     {
         id: 2,
-        name: 'James M.',
-        role: 'Busy Professional',
-        photo: 'https://randomuser.me/api/portraits/men/43.jpg',
+        name: 'Viji.',
+        role: 'Home Chef',
+        photo: Viji,
         text: 'Ordering is so easy, and the takeaway option saves me so much time!',
     },
     {
         id: 3,
-        name: 'Priya S.',
-        role: 'Home Chef',
-        photo: 'https://randomuser.me/api/portraits/women/44.jpg',
+        name: 'Sree.',
+        role: 'Busy Professional',
+        photo: Sree,
         text: 'I love their fresh ingredients and how reliable the delivery is every time.',
     },
 ];

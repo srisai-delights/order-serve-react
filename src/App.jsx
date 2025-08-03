@@ -10,7 +10,7 @@ function App() {
     return (
         <Router>
             <Navbar cart={cart} />
-            <div style={{ paddingTop: "60px" }}>
+            <div style={{ paddingTop: "20px" }}>
                 <Routes>
                     <Route path="/*" element={<ViewRenderer cart={cart} setCart={setCart} />} />
                     <Route path="/checkout" element={<Checkout cart={cart} setCart={setCart} />} />

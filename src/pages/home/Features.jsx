@@ -1,4 +1,3 @@
-import React from 'react';
 import './Features.css';
 
 const Features = () => {
@@ -28,11 +27,11 @@ const Features = () => {
                 </div>
                 <div className="feature-card">
                     <h3>Secure Payments</h3>
-                    <p>Safe and multiple payment options including card, wallet, and cash.</p>
+                    <p>Safe and multiple payment options including swish and cash.</p>
                 </div>
                 <div className="feature-card">
                     <h3>Customer Support</h3>
-                    <p>Our friendly support team is here to help you anytime.</p>
+                    <p>Our friendly support team is here to help you during working hours.</p>
                 </div>
             </section>
         </div>
