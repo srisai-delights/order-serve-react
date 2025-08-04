@@ -4,17 +4,8 @@ import "./Navbar.css";
 import menuConfig from "../assets/configuration/menuConfig.json";
 
 function Navbar({ cart }) {
-  //const [menuItems, setMenuItems] = useState([]);
   const menuRef = useRef(null);
   const navigate = useNavigate();
-
-  //useEffect(() => {
-  //    fetch("/menubar/all")
-  //        .then((res) => res.json())
-  //        .then((data) => {
-  //            setMenuItems(data);
-  //        });
-  //}, []);
 
   const handleSubmenuClick = (subItem, parentIndex) => {
     if (subItem.path) {

@@ -1,7 +1,7 @@
 import VegBiryani from "../assets/biryani/vegetable.jpg";
 import "./FoodItemGrid.css";
 
-const FoodItemGridCart = ({ items, localImages, cart, setCart }) => {
+const FoodItemGrid = ({ items, localImages, cart, setCart }) => {
   const filteredItems = items.filter((item) => item.isVisible);
 
   const onAddToCart = (item) => {
@@ -29,12 +29,6 @@ const FoodItemGridCart = ({ items, localImages, cart, setCart }) => {
         ci.id === item.id ? { ...ci, quantity: ci.quantity - 1 } : ci
       );
     });
-  };
-
-  const getCartTotal = () => {
-    return cart
-      .reduce((sum, item) => sum + parseFloat(item.price), 0)
-      .toFixed(2);
   };
 
   const getQuantity = (itemId) => {
@@ -110,4 +104,4 @@ const FoodItemGridCart = ({ items, localImages, cart, setCart }) => {
   );
 };
 
-export default FoodItemGridCart;
+export default FoodItemGrid;

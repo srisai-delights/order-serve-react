@@ -1,11 +1,18 @@
 import { useLocation } from "react-router-dom";
 
+// Home
 import Home from "../pages/home/Home";
 import Features from "../pages/home/Features";
 import Gallery from "../pages/home/Gallery";
 import Testimonials from "../pages/home/Testimonials";
 import Welcome from "../pages/home/Welcome";
 
+// Today's Special
+import TodaySpecial from "../pages/todaySpecial/TodaySpecial";
+import TodaySpecialMeals from "../pages/todaySpecial/meals";
+import TodaySpecialCombo from "../pages/todaySpecial/comboMeals";
+
+// Menu
 import Menu from "../pages/menu/Menu";
 import Biryani from "../pages/menu/Biryani";
 import Curries from "../pages/menu/Curries";
@@ -14,16 +21,19 @@ import Snacks from "../pages/menu/Snacks";
 import Tandoori from "../pages/menu/Tandoori";
 import Beverages from "../pages/menu/Beverages";
 
+// Services
 import Services from "../pages/services/Services";
 import Catering from "../pages/services/Catering";
 import Takeaway from "../pages/services/Takeaway";
 import Delivery from "../pages/services/Delivery";
 import OnlineOrder from "../pages/services/OnlineOrder";
 
+// About
 import About from "../pages/about/About";
 import OurMission from "../pages/about/OurMission";
 import OurStory from "../pages/about/OurStory";
 
+// Contact
 import Contact from "../pages/contact/Contact";
 import ContactUs from "../pages/contact/ContactUs";
 import Feedback from "../pages/contact/Feedback";
@@ -36,6 +46,10 @@ const routeComponentMap = {
   "/home/gallery": Gallery,
   "/home/testimonials": Testimonials,
   "/home/welcome": Welcome,
+
+  "/today-special": TodaySpecial,
+  "/today-special/meals": TodaySpecialMeals,
+  "/today-special/combo-meals": TodaySpecialCombo,
 
   "/menu": Menu,
   "/menu/biryani": Biryani,
@@ -84,11 +98,16 @@ function ViewRenderer({ cart, setCart }) {
     "/services/takeaway",
     "/services/delivery",
     "/services/online-ordering",
+    "/today-special",
+    "/today-special/meals",
+    "/today-special/combo-meals",
   ];
 
-  return needsCart.includes(path)
-    ? <Component cart={cart} setCart={setCart} />
-    : <Component />;
+  return needsCart.includes(path) ? (
+    <Component cart={cart} setCart={setCart} />
+  ) : (
+    <Component />
+  );
 }
 
 export default ViewRenderer;

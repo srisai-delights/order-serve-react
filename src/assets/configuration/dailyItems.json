@@ -1,0 +1,32 @@
+[
+  {
+    "id": "chickenDaily",
+    "name": "Chicken Biryani",
+    "price": 49,
+    "category": "Daily",
+    "description": "Chicken.",
+    "image": "chickenDaily.jpg",
+    "isAvailable":true, 
+    "isVisible":true
+  },
+  {
+    "id": "lambDaily",
+    "name": "Lamb Biryani",
+    "price": 49,
+    "category": "Daily",
+    "description": "Lamb.",
+    "image": "lambDaily.jpg",
+    "isAvailable":true, 
+    "isVisible":true
+  },
+  {
+    "id": "vegetarianDaily",
+    "name": "Veg Biryani",
+    "price": 49,
+    "category": "Daily",
+    "description": "Veg Biryani.",
+    "image": "vegetarianDaily.jpg",
+    "isAvailable":true, 
+    "isVisible":true
+  }
+]
