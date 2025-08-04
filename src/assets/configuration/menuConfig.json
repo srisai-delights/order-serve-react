@@ -18,7 +18,20 @@
       {
         "title": "Gallery",
         "path": "/home/gallery"
-
+      }
+    ]
+  },
+  {
+    "title": "Today Specials",
+    "path": "/today-special",
+    "subMenu": [
+      {
+        "title": "Combo Meals",
+        "path": "/today-special/combo-meals"
+      },
+      {
+        "title": "Meals",
+        "path": "/today-special/meals"
       }
     ]
   },

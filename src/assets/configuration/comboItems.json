@@ -1,0 +1,42 @@
+[
+  {
+    "id": "chickenCombo",
+    "name": "Chicken Combo",
+    "price": 149,
+    "category": "Combo",
+    "description": "Chicken Combo.",
+    "image": "chickenCombo.jpg",
+    "isAvailable":true, 
+    "isVisible":true
+  },
+  {
+    "id": "lambCombo",
+    "name": "Lamb Combo",
+    "price": 149,
+    "category": "Combo",
+    "description": "Lamb Combo.",
+    "image": "lambCombo.png",
+    "isAvailable":true, 
+    "isVisible":true
+  },
+  {
+    "id": "hyderabadChickenCombo",
+    "name": "Hyderabad Chicken Combo",
+    "price": 149,
+    "category": "Combo",
+    "description": "Hyderabad Chicken Combo.",
+    "image": "hyderabadiChickenCombo.png",
+    "isAvailable":true, 
+    "isVisible":true
+  },
+  {
+    "id": "muttonCombo",
+    "name": "Mutton Combo",
+    "price": 149,
+    "category": "Combo",
+    "description": "Mutton Combo.",
+    "image": "muttonCombo.jpg",
+    "isAvailable":true, 
+    "isVisible":true
+  }
+]
