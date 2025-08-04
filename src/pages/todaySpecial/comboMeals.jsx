@@ -22,14 +22,14 @@ const ComboMeals = ({ cart, setCart }) => {
   return (
     <>
       <div className="fancy-container">
-        <h2>🍛 Daily Meals</h2>
+        <h2>🍛 Combo Meals</h2>
         <SpecialMenuCard
           items={ComboItems}
           localImages={localImages}
           cart={cart}
           setCart={setCart}
           columnWidth={440}
-          rowHeight={470}
+          rowHeight={500}
         />
       </div>
     </>

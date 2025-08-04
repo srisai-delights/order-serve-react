@@ -2,7 +2,7 @@
   {
     "id": "chickenDaily",
     "name": "Chicken Biryani",
-    "price": 49,
+    "price": 109,
     "category": "Daily",
     "description": "Chicken.",
     "image": "chickenDaily.jpg",
@@ -12,7 +12,7 @@
   {
     "id": "lambDaily",
     "name": "Lamb Biryani",
-    "price": 49,
+    "price": 109,
     "category": "Daily",
     "description": "Lamb.",
     "image": "lambDaily.jpg",
@@ -22,7 +22,7 @@
   {
     "id": "vegetarianDaily",
     "name": "Veg Biryani",
-    "price": 49,
+    "price": 109,
     "category": "Daily",
     "description": "Veg Biryani.",
     "image": "vegetarianDaily.jpg",

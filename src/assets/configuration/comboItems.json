@@ -2,7 +2,7 @@
   {
     "id": "chickenCombo",
     "name": "Chicken Combo",
-    "price": 49,
+    "price": 149,
     "category": "Combo",
     "description": "Chicken Combo.",
     "image": "chickenCombo.jpg",
@@ -12,7 +12,7 @@
   {
     "id": "lambCombo",
     "name": "Lamb Combo",
-    "price": 49,
+    "price": 149,
     "category": "Combo",
     "description": "Lamb Combo.",
     "image": "lambCombo.png",
@@ -22,7 +22,7 @@
   {
     "id": "hyderabadChickenCombo",
     "name": "Hyderabad Chicken Combo",
-    "price": 49,
+    "price": 149,
     "category": "Combo",
     "description": "Hyderabad Chicken Combo.",
     "image": "hyderabadiChickenCombo.png",
@@ -32,7 +32,7 @@
   {
     "id": "muttonCombo",
     "name": "Mutton Combo",
-    "price": 49,
+    "price": 149,
     "category": "Combo",
     "description": "Mutton Combo.",
     "image": "muttonCombo.jpg",
