@@ -4,22 +4,67 @@
     gap: 16px;
     padding: 20px;
     background-color: transparent;
+    perspective: 1500px;
 }
 
 .food-item-tile {
-    background: linear-gradient( 180deg, hsl(10, 60%, 70%) 0%, hsl(10, 65%, 75%) 20%, hsl(10, 75%, 85%) 40%, hsl(10, 78%, 88%) 60%, hsl(10, 79%, 89%) 80%, hsl(10, 83%, 93%) 100% );
+    background: linear-gradient(180deg,
+            hsl(10, 60%, 70%) 0%,
+            hsl(10, 65%, 75%) 20%,
+            hsl(10, 75%, 85%) 40%,
+            hsl(10, 78%, 88%) 60%,
+            hsl(10, 79%, 89%) 80%,
+            hsl(10, 83%, 93%) 100%);
     border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    box-shadow:
+        0 10px 20px rgba(0, 0, 0, 0.15),
+        inset 0 1px 2px rgba(255, 255, 255, 0.2);
     display: flex;
     flex-direction: column;
-    transition: transform 0.2s ease-in-out;
-    padding-bottom: 10px;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    transform-style: preserve-3d;
+    will-change: transform;
+    position: relative;
+    z-index: 0;
 }
 
-    .food-item-tile:hover {
-        transform: translateY(-4px);
+ @keyframes float {
+    0% {
+        transform: translateY(0px);
     }
+    50% {
+        transform: translateY(-3px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.food-item-outer {
+    animation: float 4s ease-in-out infinite;
+} 
+
+.food-item-tile::before {
+    content: '';
+    position: absolute;
+    top: -10%;
+    left: -10%;
+    width: 120%;
+    height: 120%;
+    background: radial-gradient(circle at center, rgba(255, 255, 255, 0.2) 0%, transparent 80%);
+    transform: translateZ(1px);
+    pointer-events: none;
+    z-index: 1;
+}
+
+.food-item-tile:hover {
+    transform: rotateX(8deg) rotateY(8deg) translateY(-8px) scale(1.03);
+    box-shadow:
+        0 20px 40px rgba(0, 0, 0, 0.25),
+        inset 0 2px 4px rgba(255, 255, 255, 0.3);
+    z-index: 5;
+}
 
 .food-item-name {
     font-size: 1.1rem;
@@ -34,7 +79,8 @@
     width: 100%;
     box-sizing: border-box;
     display: -webkit-box;
-    -webkit-line-clamp: 1; /* Limit to 1 lines */
+    -webkit-line-clamp: 1;
+    /* Limit to 1 lines */
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -50,7 +96,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    align-content:center;
+    align-content: center;
 }
 
 .food-item-details {
@@ -92,9 +138,9 @@
     transition: background-color 0.2s ease;
 }
 
-    .cart-button:hover {
-        background-color: #0056b3;
-    }
+.cart-button:hover {
+    background-color: #0056b3;
+}
 
 @media (max-width: 600px) {
     .food-item-grid {

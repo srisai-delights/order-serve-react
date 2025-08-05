@@ -28,8 +28,8 @@ const ComboMeals = ({ cart, setCart }) => {
           localImages={localImages}
           cart={cart}
           setCart={setCart}
-          columnWidth={440}
-          rowHeight={500}
+          columnWidth={400}
+          rowHeight={490}
         />
       </div>
     </>
