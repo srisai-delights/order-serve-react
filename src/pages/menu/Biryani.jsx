@@ -13,7 +13,7 @@ import VegBiryani from '../../assets/biryani/vegetable.jpg';
 import PannerBiryani from '../../assets/biryani/panner.jpg';
 import MealMakerBiryani from '../../assets/biryani/mealMaker.jpg';
 import EggBiryani from '../../assets/biryani/eggBiryani.jpg';
-import MushroomBiryani from '../../assets/biryani/mushroomBiryani.jpeg';
+import MushroomBiryani from '../../assets/biryani/mushroomBiryani.jpg';
 
 const localImages = {
     "biryaniChicken.jpg": ChickenBiryani,
