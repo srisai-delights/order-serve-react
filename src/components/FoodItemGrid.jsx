@@ -46,7 +46,9 @@ const FoodItemGrid = ({ items, localImages, cart, setCart }) => {
         return (
           <div className="food-item-outer">
             <div key={index} className="food-item-tile">
-              <h3 className="food-item-name">{item.name}</h3>
+              <div className="food-item-tite">
+                <h3 className="food-item-name">{item.name}</h3>
+              </div>
               <div className="food-item-image-container">
                 <img
                   src={
