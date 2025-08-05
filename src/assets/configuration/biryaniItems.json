@@ -27,7 +27,7 @@
     "description": "Seeraga samba rice with tender meat and spices.",
     "image": "dindigulBiriyaniChicken.jpg",
     "isAvailable":true, 
-    "isVisible":false
+    "isVisible":true
   },
   {
     "id": "lambBiryani",
