@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from "./components/Navbar";
 import ViewRenderer from "./components/ViewRenderer";
 import Checkout from './pages/Checkout';
+import 'bootstrap-icons/font/bootstrap-icons.css';
 
 function App() {
     const [cart, setCart] = useState([]);
