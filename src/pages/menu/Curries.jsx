@@ -11,6 +11,7 @@ import FishCurry from "../../assets/curries/fishCurry.jpg";
 import PaneerCurry from "../../assets/curries/paneerCurry.jpg";
 import VegetableCurry from "../../assets/curries/vegetableCurry.jpg";
 import VegetableKorma from "../../assets/curries/vegetableKorma.jpg";
+import TemplateImage from "../../assets/templateImage.png";
 
 const localImages = {
   "chickenCurry.jpg": ChickenCurry,
@@ -23,6 +24,7 @@ const localImages = {
   "paneerCurry.jpg": PaneerCurry,
   "vegetableCurry.jpg": VegetableCurry,
   "vegetableKorma.jpg": VegetableKorma,
+  "templateImage.png": TemplateImage,
 };
 
 const Curries = ({ cart, setCart }) => {

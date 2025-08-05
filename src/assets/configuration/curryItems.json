@@ -98,5 +98,16 @@
     "image": "vegetableKorma.jpg",
     "isAvailable":true, 
     "isVisible":true
+  },
+  {
+    "id": "dalMakhani",
+    "name": "Dal Makhani",
+    "price": 89,
+    "category": "Curries",
+    "description": "Dal Makhani.",
+    "image": "templateImage.png",
+    "isAvailable":true, 
+    "isVisible":true
   }
+
 ]
