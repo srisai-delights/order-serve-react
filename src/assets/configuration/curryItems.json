@@ -198,5 +198,105 @@
     "image": "lambCurry.jpg",
     "isAvailable": true,
     "isVisible": true
-  } 
+  },
+  {
+    "id": "fishFry",
+    "name": "Fish Fry",
+    "price": 89,
+    "category": "Starters",
+    "description": "Crispy, golden fish with a spicy kick!",
+    "image": "templateImage.png",
+    "isAvailable": true,
+    "isVisible": true
+  },  
+  {
+    "id": "chickenStew",
+    "name": "Chicken Stew",
+    "price": 89,
+    "category": "Curries",
+    "description": "A Kerala-style stew with delicate spices and juicy chicken!",
+    "image": "templateImage.png",
+    "isAvailable": true,
+    "isVisible": true
+  },
+  {
+    "id": "vegetableStew",
+    "name": "Vegetable Stew",
+    "price": 89,
+    "category": "Curries",
+    "description": "Fragrant coconut milk stew with colorful veggies!",
+    "image": "templateImage.png",
+    "isAvailable": true,
+    "isVisible": true
+  },
+  {
+    "id": "vegetableAvial",
+    "name": "Vegetable Avial",
+    "price": 89,
+    "category": "Curries",
+    "description": "A medley of vegetables in a coconut yogurt sauce!",
+    "image": "templateImage.png",
+    "isAvailable": true,
+    "isVisible": true
+  },
+  {
+    "id": "mushroomPepperFry",
+    "name": "Mushroom Pepper Fry",
+    "price": 89,
+    "category": "Starters",
+    "description": "Black pepper brings the heat to these juicy mushrooms!",
+    "image": "templateImage.png",
+    "isAvailable": true,
+    "isVisible": true
+  },
+  {
+    "id": "cauliflowerChilli65",
+    "name": "Cauliflower Chilli 65",
+    "price": 89,
+    "category": "Starters",
+    "description": "Spicy, crispy cauliflower made to crave!",
+    "image": "templateImage.png",
+    "isAvailable": true,
+    "isVisible": true
+  },
+  {
+    "id": "mixVegetablecrispy",
+    "name": "Mix Vegetable Crispy",
+    "price": 89,
+    "category": "Starters",
+    "description": "Crispy, spiced vegetable fritters!",
+    "image": "templateImage.png",
+    "isAvailable": true,
+    "isVisible": true
+  },
+  {
+    "id": "fishPuttu",
+    "name": "Fish Puttu",
+    "price": 89,
+    "category": "Starters",
+    "description": "Delicately spiced, flaky fish perfection!",
+    "image": "templateImage.png",
+    "isAvailable": true,
+    "isVisible": true
+  },
+  {
+    "id": "chickenManchurian",
+    "name": "Chicken Manchurian",
+    "price": 89,
+    "category": "Starters",
+    "description": "Indo-Chinese classic with bold flavors and crispy bites!",
+    "image": "templateImage.png",
+    "isAvailable": true,
+    "isVisible": true
+  },
+  {
+    "id": "gopiManchurian",
+    "name": "Gopi Manchurian",
+    "price": 89,
+    "category": "Starters",
+    "description": "Golden-fried gobi in a tangy garlic-chili glaze!",
+    "image": "templateImage.png",
+    "isAvailable": true,
+    "isVisible": true
+  }
 ]
