@@ -4,110 +4,199 @@
     "name": "Chicken Curry",
     "price": 89,
     "category": "Curries",
-    "description": "Chicken Curry.",
+    "description": "Simple, flavorful, and irresistible chicken curry!",
     "image": "chickenCurry.jpg",
-    "isAvailable":true, 
-    "isVisible":true
+    "isAvailable": true,
+    "isVisible": true
   },
   {
     "id": "chickenKorma",
     "name": "Chicken Korma",
     "price": 89,
     "category": "Curries",
-    "description": "Chicken Korma.",
+    "description": "A perfect blend of coconut and chicken in every bite!",
     "image": "chickenKorma.jpg",
-    "isAvailable":true, 
-    "isVisible":true
+    "isAvailable": true,
+    "isVisible": true
   },
   {
     "id": "lambCurry",
     "name": "Lamb Curry",
     "price": 189,
     "category": "Curries",
-    "description": "Lamb Curry.",
+    "description": "Melt-in-your-mouth lamb with a perfect curry kick!",
     "image": "lambCurry.jpg",
-    "isAvailable":true, 
-    "isVisible":true
+    "isAvailable": true,
+    "isVisible": true
   },
   {
     "id": "lambKorma",
     "name": "Lamb Korma",
     "price": 189,
     "category": "Curries",
-    "description": "Lamb Korma.",
+    "description": "Lamb simmered in a luxurious, fragrant korma sauce!",
     "image": "lambKorma.jpg",
-    "isAvailable":true, 
-    "isVisible":true
+    "isAvailable": true,
+    "isVisible": true
   },
   {
     "id": "prawnCurry",
     "name": "Prawn Curry",
     "price": 149,
     "category": "Curries",
-    "description": "Prawn Curry.",
+    "description": "Dive into creamy prawns with a royal korma sauce!",
     "image": "prawnCurry.jpg",
-    "isAvailable":true, 
-    "isVisible":true
+    "isAvailable": true,
+    "isVisible": true
   },
   {
     "id": "prawnKorma",
     "name": "Prawn Korma",
     "price": 149,
     "category": "Curries",
-    "description": "Prawn Korma.",
+    "description": "Spiced prawns in a velvety, coconut-infused korma!",
     "image": "prawnKorma.jpg",
-    "isAvailable":true, 
-    "isVisible":true
+    "isAvailable": true,
+    "isVisible": true
   },
   {
     "id": "fishCurry",
     "name": "Fish Curry",
     "price": 159,
     "category": "Curries",
-    "description": "Fish Curry.",
+    "description": "Fresh fish swimming in aromatic curry!",
     "image": "fishCurry.jpg",
-    "isAvailable":true, 
-    "isVisible":true
+    "isAvailable": true,
+    "isVisible": true
   },
   {
-    "id": "pannerKorma",
-    "name": "Panner Korma",
+    "id": "mushroomCurry",
+    "name": "Mushroom Curry",
     "price": 89,
     "category": "Curries",
-    "description": "Panner Korma.",
-    "image": "pannerCurry.jpg",
-    "isAvailable":true, 
-    "isVisible":true
+    "description": "Rich, fragrant curry with a mushroom twist!",
+    "image": "templateImage.png",
+    "isAvailable": true,
+    "isVisible": true
   },
   {
     "id": "vegetableCurry",
     "name": "Vegetable Curry",
     "price": 89,
     "category": "Curries",
-    "description": "Vegetable Curry.",
-    "image": "vegetableCurry.jpg",
-    "isAvailable":true, 
-    "isVisible":true
+    "description": "A colorful, spice-kissed vegetable feast!",
+    "image": "templateImage.png",
+    "isAvailable": true,
+    "isVisible": true
   },
   {
     "id": "vegetableKorma",
     "name": "Vegetable Korma",
     "price": 89,
     "category": "Curries",
-    "description": "Vegetable Korma.",
-    "image": "vegetableKorma.jpg",
-    "isAvailable":true, 
-    "isVisible":true
+    "description": "Fresh veggies in a smooth, coconut-spiced gravy!",
+    "image": "templateImage.png",
+    "isAvailable": true,
+    "isVisible": true
   },
   {
-    "id": "dalMakhani",
-    "name": "Dal Makhani",
+    "id": "paneerButtermasala",
+    "name": "Paneer Butter Masala",
     "price": 89,
     "category": "Curries",
-    "description": "Dal Makhani.",
+    "description": "A luxurious, rich curry for every palate!",
     "image": "templateImage.png",
-    "isAvailable":true, 
-    "isVisible":true
-  }
-
+    "isAvailable": true,
+    "isVisible": true
+  },
+  {
+    "id": "kadaiPaneer",
+    "name": "Kadai Paneer",
+    "price": 89,
+    "category": "Curries",
+    "description": "Rustic North Indian delight!",
+    "image": "paneerCurry.jpg",
+    "isAvailable": true,
+    "isVisible": true
+  },
+  {
+    "id": "butterChicken",
+    "name": "Butter Chicken",
+    "price": 89,
+    "category": "Curries",
+    "description": "Creamy, dreamy, buttery bliss!",
+    "image": "chickenCurry.jpg",
+    "isAvailable": true,
+    "isVisible": true
+  },
+  {
+    "id": "kadaiChicken",
+    "name": "Kadai Chicken",
+    "price": 89,
+    "category": "Curries",
+    "description": "Bell peppers, bold spice, tender chicken!",
+    "image": "chickenCurry.jpg",
+    "isAvailable": true,
+    "isVisible": true
+  },
+  {
+    "id": "chickenMasala",
+    "name": "Chicken Masala",
+    "price": 89,
+    "category": "Curries",
+    "description": "The heart of homestyle Indian cooking!",
+    "image": "chickenCurry.jpg",
+    "isAvailable": true,
+    "isVisible": true
+  },
+  {
+    "id": "chickenTikkaMasala",
+    "name": "Chicken Tikka Masala",
+    "price": 89,
+    "category": "Curries",
+    "description": "A global favorite with desi soul!",
+    "image": "chickenCurry.jpg",
+    "isAvailable": true,
+    "isVisible": true
+  },
+  {
+    "id": "pepperChicken",
+    "name": "Pepper Chicken",
+    "price": 89,
+    "category": "Starters",
+    "description": "Pepper punch in every bite!",
+    "image": "templateImage.png",
+    "isAvailable": true,
+    "isVisible": true
+  },
+  {
+    "id": "lambChops",
+    "name": "Lamb Chops",
+    "price": 89,
+    "category": "Starters",
+    "description": "Tender, juicy, spice-kissed chops!",
+    "image": "templateImage.png",
+    "isAvailable": true,
+    "isVisible": true
+  },
+  {
+    "id": "chickenKolaurUrundai",
+    "name": "Chicken Kola Urundai",
+    "price": 89,
+    "category": "Starters",
+    "description": "Golden fried chicken flavor bombs!",
+    "image": "chickenCurry.jpg",
+    "isAvailable": true,
+    "isVisible": true
+  },
+  {
+    "id": "lambKolaUrundai",
+    "name": "Lamb kola urundai",
+    "price": 89,
+    "category": "Starters",
+    "description": "Crispy, spicy lamb bites of tradition!",
+    "image": "lambCurry.jpg",
+    "isAvailable": true,
+    "isVisible": true
+  } 
 ]
