@@ -11,6 +11,7 @@ import PalKova from "../../assets/desserts/palKova.jpg";
 import Rasamalai from "../../assets/desserts/rasamalai.jpg";
 import RavaLaddu from "../../assets/desserts/ravaLaddu.jpg";
 import WheatHalwa from "../../assets/desserts/wheatHalwa.jpg";
+import { useEffect, useState } from "react";
 
 const localImages = {
   "breadHalwa.jpg": BreadHalwa,
@@ -26,11 +27,23 @@ const localImages = {
 };
 
 const Desserts = ({ cart, setCart }) => {
+  const [items, setItems] = useState([]);
+  // localStorage.removeItem("menuItems");
+  useEffect(() => {
+    const storedItems = localStorage.getItem("combinedMenuItems");
+    if (storedItems) {
+      setItems(JSON.parse(storedItems));
+    } else {
+      setItems(DessertItems);
+    }
+  }, []);
+
+  const filteredItems = items.filter((item) => item.category === "Desserts");
   return (
     <div className="food-item-container">
       <h2 className="food-item-section">Dessert Specials</h2>
       <FoodItemGrid
-        items={DessertItems}
+        items={filteredItems}
         localImages={localImages}
         cart={cart}
         setCart={setCart}

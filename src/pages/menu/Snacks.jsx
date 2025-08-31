@@ -13,6 +13,8 @@ import SamosaLamb from "../../assets/snacks/samosaLamb.jpeg";
 import Samosa from "../../assets/snacks/samosaVeg.jpeg";
 import SpringRoll from "../../assets/snacks/springRoll.jpeg";
 import Thattai from "../../assets/snacks/thattai.jpeg";
+import { useEffect, useState } from "react";
+
 
 const localImages = {
   "chickenRoll.jpg": ChickenRoll,
@@ -30,11 +32,23 @@ const localImages = {
 };
 
 const Snacks = ({ cart, setCart }) => {
+  const [items, setItems] = useState([]);
+  // localStorage.removeItem("menuItems");
+  useEffect(() => {
+    const storedItems = localStorage.getItem("combinedMenuItems");
+    if (storedItems) {
+      setItems(JSON.parse(storedItems));
+    } else {
+      setItems(SnackItems);
+    }
+  }, []);
+
+  const filteredItems = items.filter((item) => item.category === "Snacks");
   return (
     <div className="food-item-container">
       <h2 className="food-item-section">Snacks Specials</h2>
       <FoodItemGrid
-        items={SnackItems}
+        items={filteredItems}
         localImages={localImages}
         cart={cart}
         setCart={setCart}

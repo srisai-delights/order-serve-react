@@ -1,3 +1,6 @@
+/* ========================= */
+/* Checkout Page Styles */
+/* ========================= */
 .checkout-wrapper {
     padding: 30px;
     max-width: 1200px;
@@ -13,6 +16,7 @@
     margin-bottom: 20px;
 }
 
+/* Table Container */
 .checkout-table-container {
     width: 100%;
     overflow-x: auto;
@@ -26,19 +30,21 @@
     color: #000;
 }
 
+/* Table Styles */
 .checkout-table {
     width: 100%;
     border-collapse: collapse;
     font-size: 16px;
     background: hsl(10, 85%, 95%);
-    ;
 }
 
 .checkout-table th {
     padding: 8px 16px;
     border-bottom: 1px solid #e0e0e0;
     text-align: center;
-    color: #000;
+    color: hsl(307, 65%, 31%);
+    font-weight: bold;
+    background-color: hsl(10, 85%, 95%);
 }
 
 .checkout-table td {
@@ -46,27 +52,19 @@
     border-bottom: 1px solid #e0e0e0;
     text-align: left;
     color: #000;
-    /* border: 0.5px solid #ccc; */
 }
 
 .checkout-table tfoot td {
     border-bottom: 1px solid #e0e0e0;
     text-align: center;
     color: #000;
-    /* border: 0.5px solid #ccc; */
-}
-
-.checkout-table th {
-    background-color: hsl(10, 85%, 95%);
-    color: hsl(307, 65%, 31%);
-    font-weight: bold;
-    /* border: 0.5px solid #ccc; */
 }
 
 .checkout-table tbody tr:hover {
     background-color: #ede7f6;
 }
 
+/* Quantity Controls */
 .qty-controls {
     display: flex;
     justify-content: center;
@@ -89,6 +87,7 @@
     cursor: not-allowed;
 }
 
+/* Delete Button */
 .delete-button {
     background: transparent;
     border: none;
@@ -101,6 +100,7 @@
     color: #f44336;
 }
 
+/* Totals */
 .total-label {
     text-align: center;
     font-weight: bold;
@@ -115,7 +115,7 @@
     color: hsl(10, 42%, 43%);
 }
 
-/* Form */
+/* Form Actions */
 .checkout-actions {
     display: flex;
     flex-direction: column;
@@ -142,13 +142,14 @@
     border-radius: 6px;
     font-size: 16px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 .checkout-button:hover {
     background-color: #5e35b1;
 }
 
-/* Order Placed Message */
+/* Messages */
 .checkout-success-message {
     text-align: center;
     font-size: 1.4rem;
@@ -156,7 +157,6 @@
     margin-top: 20px;
 }
 
-/* Empty Cart */
 .empty-cart-message {
     text-align: center;
     font-size: 1.2rem;
@@ -170,3 +170,54 @@
     padding: 25px;
     box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
 }
+
+/* ========================= */
+/* Responsive Breakpoints */
+/* ========================= */
+@media (max-width: 768px) {
+    .checkout-wrapper {
+        padding: 20px;
+    }
+
+    .checkout-title {
+        font-size: 1.8rem;
+    }
+
+    .checkout-table th,
+    .checkout-table td {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .checkout-button,
+    .email-input {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .checkout-wrapper {
+        padding: 15px;
+    }
+
+    .checkout-title {
+        font-size: 1.5rem;
+    }
+
+    .checkout-table th,
+    .checkout-table td {
+        font-size: 13px;
+        padding: 6px;
+    }
+
+    .qty-controls button {
+        padding: 3px 8px;
+        font-size: 14px;
+    }
+
+    .checkout-button {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+}
+/* ========================= */
