@@ -37,7 +37,7 @@ const FoodItemGrid = ({ items, localImages, cart, setCart }) => {
   };
 
   if (!filteredItems.length)
-    return <p>No items found in {category} category.</p>;
+    return <p>No items found in this category.</p>;
 
   return (
     <div className="food-item-grid">

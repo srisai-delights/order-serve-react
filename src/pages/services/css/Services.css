@@ -1,57 +1,122 @@
-﻿.services-page {
+﻿/* ========================= */
+/* Services Page Styles */
+/* ========================= */
+.services-page {
     font-family: Arial, sans-serif;
     padding: 20px;
-    max-width: auto;
+    max-width: 1200px;
     margin: 0 auto;
     background-color: hsl(10, 80%, 95%);
 }
 
+/* Hero Section */
 .hero {
     text-align: center;
     background-color: hsl(10, 80%, 95%);
     padding: 40px;
     border-radius: 8px;
-    width:100%
+    width: 100%;
 }
 
-    .hero h1 {
-        font-size: 2.5rem;
-        color: hsl(0, 0%, 20%);
-    }
+.hero h1 {
+    font-size: 2.5rem;
+    color: hsl(0, 0%, 20%);
+    margin-bottom: 10px;
+}
 
-    .hero p {
-        font-size: 1.2rem;
-        color: hsl(0, 0%, 33%);
-    }
+.hero p {
+    font-size: 1.2rem;
+    color: hsl(0, 0%, 33%);
+    margin-bottom: 20px;
+}
 
+/* Sections */
 section {
-    margin-top: 10px;
+    margin-top: 30px;
 }
 
-    section h2 {
-        font-size: 1.8rem;
-        color: hsl(0, 0%, 20%);
-    }
+section h2 {
+    font-size: 1.8rem;
+    color: hsl(0, 0%, 20%);
+    margin-bottom: 10px;
+}
 
-    section p {
-        font-size: 1rem;
-        color: hsl(0, 0%, 33%);
-    }
+section p {
+    font-size: 1rem;
+    color: hsl(0, 0%, 33%);
+    line-height: 1.6;
+}
 
+/* Lists */
 ul {
     list-style-type: none;
     padding: 0;
 }
 
-    ul li {
-        font-size: 1rem;
-        color: hsl(0, 0%, 33%);
-        padding-left: 1.2rem;
-        position: relative;
+ul li {
+    font-size: 1rem;
+    color: hsl(0, 0%, 33%);
+    padding-left: 1.2rem;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+ul li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: hsl(120, 100%, 25%);
+}
+
+/* ========================= */
+/* Responsive Styles */
+/* ========================= */
+
+/* Tablet */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
     }
 
-        ul li::before {
-            position: absolute;
-            left: 0;
-            color: hsl(120, 100%, 25%);
-        }
+    .hero p {
+        font-size: 1.1rem;
+    }
+
+    section h2 {
+        font-size: 1.5rem;
+    }
+
+    section p,
+    ul li {
+        font-size: 0.95rem;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .services-page {
+        padding: 15px;
+    }
+
+    .hero {
+        padding: 25px 15px;
+    }
+
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    section h2 {
+        font-size: 1.3rem;
+    }
+
+    section p,
+    ul li {
+        font-size: 0.9rem;
+    }
+}
+/* ========================= */

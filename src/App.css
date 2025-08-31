@@ -1,11 +1,41 @@
-﻿#root {
+﻿/* ========================= */
+/* Root Container */
+#root {
     max-width: 1280px;
     margin: 0 auto;
     padding: 2rem;
     text-align: center;
 }
 
+/* Table Cells */
 th, td {
     padding-left: 1rem;
     padding-right: 1rem;
 }
+
+/* ========================= */
+/* Responsive Breakpoints */
+@media (max-width: 768px) {
+    #root {
+        padding: 1.5rem;
+    }
+
+    th, td {
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #root {
+        padding: 1rem;
+    }
+
+    th, td {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        font-size: 0.85rem;
+    }
+}
+/* ========================= */

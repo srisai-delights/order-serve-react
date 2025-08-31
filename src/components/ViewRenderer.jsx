@@ -20,6 +20,7 @@ import Desserts from "../pages/menu/Desserts";
 import Snacks from "../pages/menu/Snacks";
 import Tandoori from "../pages/menu/Tandoori";
 import Beverages from "../pages/menu/Beverages";
+import MenuManager from "../pages/menu/MenuManager";
 
 // Services
 import Services from "../pages/services/Services";
@@ -52,6 +53,7 @@ const routeComponentMap = {
   "/today-special/combo-meals": TodaySpecialCombo,
 
   "/menu": Menu,
+  "/menu/manager": MenuManager,
   "/menu/biryani": Biryani,
   "/menu/beverages": Beverages,
   "/menu/curries": Curries,
