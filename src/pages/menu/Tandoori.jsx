@@ -6,6 +6,7 @@ import LambKebabs from "../../assets/tandoori/lambKebabs.jpeg";
 import PannerTandoori from "../../assets/tandoori/pannerTandoori.jpeg";
 import FishTandoori from "../../assets/tandoori/fishTandoori.jpg";
 import GrillChicken from "../../assets/tandoori/grillChicken.jpg";
+import { useEffect, useState } from "react";
 
 const localImages = {
   "chickenTandoori.jpg": ChickenTandoori,
@@ -16,11 +17,23 @@ const localImages = {
 };
 
 const Tandoori = ({ cart, setCart }) => {
+  const [items, setItems] = useState([]);
+  // localStorage.removeItem("menuItems");
+  useEffect(() => {
+    const storedItems = localStorage.getItem("combinedMenuItems");
+    if (storedItems) {
+      setItems(JSON.parse(storedItems));
+    } else {
+      setItems(TandooriItems);
+    }
+  }, []);
+
+  const filteredItems = items.filter((item) => item.category === "Tandoori");
   return (
     <div className="food-item-container">
       <h2 className="food-item-section">Tandoori Specials</h2>
       <FoodItemGrid
-        items={TandooriItems}
+        items={filteredItems}
         localImages={localImages}
         cart={cart}
         setCart={setCart}

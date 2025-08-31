@@ -1,42 +1,88 @@
-/* Our Mission Page Styles */
-
+/* ===== Our Mission Page ===== */
 .ourmission-container {
-    background-color: hsl(10, 80%, 95%);
-    color: #333;
-    font-family: 'Segoe UI', sans-serif;
-    max-width: auto;
-    padding: 20px 10px;
-    text-align: left;
-    margin-left: 30px;
+  background-color: hsl(10, 80%, 95%);
+  color: #333;
+  font-family: "Segoe UI", sans-serif;
+  max-width: 1000px;
+  padding: 30px 20px;
+  margin: 0 auto;
+  text-align: left;
+  border-radius: 8px;
 }
 
+/* ===== Header ===== */
 .ourmission-header h1 {
-    font-size: 3rem;
-    color: hsl(10, 80%, 40%);
-    margin-bottom: 10px;
+  font-size: 2.5rem;
+  color: hsl(10, 80%, 40%);
+  margin-bottom: 12px;
 }
 
 .ourmission-header p {
-    font-size: 1.3rem;
-    color: #555;
-    margin-bottom: 40px;
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 32px;
+  line-height: 1.6;
 }
 
+/* ===== Content ===== */
 .ourmission-content h2 {
-    font-size: 2rem;
-    color: hsl(10, 80%, 40%);
-    margin-bottom: 20px;
+  font-size: 1.8rem;
+  color: hsl(10, 80%, 40%);
+  margin-bottom: 16px;
 }
 
 .ourmission-content p {
-    font-size: 1.1rem;
-    line-height: 1.7;
-    margin-bottom: 25px;
-    color: #444;
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 24px;
+  color: #444;
 }
 
+/* ===== Footer ===== */
 .ourmission-footer {
-    margin-top: 60px;
+  margin-top: 50px;
+  font-size: 0.9rem;
+  color: #777;
+  text-align: center;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .ourmission-container {
+    padding: 20px 16px;
+  }
+
+  .ourmission-header h1 {
+    font-size: 2rem;
+  }
+
+  .ourmission-header p {
+    font-size: 1rem;
+  }
+
+  .ourmission-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .ourmission-content p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .ourmission-header h1 {
+    font-size: 1.6rem;
+  }
+
+  .ourmission-header p {
     font-size: 0.9rem;
-    color: #777;
+  }
+
+  .ourmission-content h2 {
+    font-size: 1.3rem;
+  }
+
+  .ourmission-content p {
+    font-size: 0.9rem;
+  }
 }

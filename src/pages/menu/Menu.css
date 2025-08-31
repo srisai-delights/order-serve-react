@@ -1,35 +1,41 @@
+/* ========================= */
+/* Menu Container & Sections */
+/* ========================= */
+
 .menu-container {
-    max-width: auto;
-    margin: 0 0 0 0;
-    padding: 0px;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
     font-family: 'Segoe UI', sans-serif;
 }
-
 
 .checkout-menu-title {
     text-align: center;
     font-size: 2.5rem;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     color: #333;
 }
 
 .menu-section {
     margin: 0;
     padding: 0;
-    margin-top: 2px;
+    margin-top: 10px;
     font-size: 1.8rem;
     color: #444;
     border-bottom: 2px solid #eee;
-    padding-bottom: 2px;
+    padding-bottom: 5px;
 }
 
+/* ========================= */
+/* Menu Grid & Tiles */
+/* ========================= */
+
 .menu-grid {
-    background: lightgray;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(15%, 1fr));
-    gap: 3px;
-    padding: 0;
-    margin: 0;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+    padding: 5px;
+    background: lightgray;
 }
 
 .menu-tile {
@@ -38,21 +44,27 @@
     overflow: hidden;
     position: relative;
     padding: 10px;
-    margin: 5px 0 5px 5px;
-    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .menu-tile:hover {
     transform: translateY(-5px);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
 }
 
 .image-container {
     position: relative;
     width: 100%;
+    height: 150px;
+    overflow: hidden;
+}
+
+.tile-image {
+    width: 100%;
     height: 100%;
-    margin: 0;
-    padding: 0;
+    display: block;
+    object-fit: cover;
 }
 
 .overlay-text {
@@ -61,61 +73,111 @@
     background: rgba(0, 0, 0, 0.15);
     color: #fff;
     width: 100%;
-    /*padding: 1px 3px;*/
-    box-sizing: border-box;
     text-align: center;
-}
-
-.tile-image {
-    width: 100%;
-    height: 80%;
-    display: block;
-    object-fit: cover;
-    border: none;
+    padding: 2px 0;
+    box-sizing: border-box;
 }
 
 .tile-title {
-    margin: 0;
+    margin: 5px 0 2px;
     font-size: 1rem;
     font-weight: bold;
+    color: #fff;
 }
 
 .tile-description {
     margin: 2px 0;
     font-size: 0.75rem;
+    color: #eee;
 }
 
 .tile-price {
-    margin: 2px 0 0;
+    margin: 2px 0 5px;
     font-weight: bold;
     font-size: 0.85rem;
     color: #ff4d4d;
 }
 
 .cart-button {
-    margin-Top: 5px;
+    margin-top: 5px;
     padding: 5px 10px;
     background: #ff4d4d;
     color: #fff;
     border: none;
-    border-Radius: 5px;
+    border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
+.cart-button:hover {
+    background-color: #e60000;
+}
+
+/* ========================= */
+/* Responsive Styles */
+/* ========================= */
+
+/* Tablet (max-width: 768px) */
 @media (max-width: 768px) {
+    .menu-grid {
+        grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+        gap: 8px;
+        padding: 5px;
+    }
+
+    .image-container {
+        height: 120px;
+    }
+
     .tile-title {
-        font-size: 1rem;
+        font-size: 0.95rem;
     }
 
     .tile-description {
-        font-size: 0.8rem;
+        font-size: 0.7rem;
     }
 
     .tile-price {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
+    }
+
+    .cart-button {
+        font-size: 0.8rem;
+        padding: 4px 8px;
     }
 }
 
+/* Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+    .menu-grid {
+        grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+        gap: 6px;
+        padding: 4px;
+    }
+
+    .image-container {
+        height: 100px;
+    }
+
+    .tile-title {
+        font-size: 0.85rem;
+    }
+
+    .tile-description {
+        font-size: 0.65rem;
+    }
+
+    .tile-price {
+        font-size: 0.75rem;
+    }
+
+    .cart-button {
+        font-size: 0.75rem;
+        padding: 3px 6px;
+    }
+}
+
+/* Large screens (min-width: 1200px) */
 @media (min-width: 1200px) {
     .tile-title {
         font-size: 1.1rem;
@@ -129,3 +191,4 @@
         font-size: 1rem;
     }
 }
+/* ========================= */

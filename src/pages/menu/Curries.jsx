@@ -11,6 +11,8 @@ import FishCurry from "../../assets/curries/fishCurry.jpg";
 import PaneerCurry from "../../assets/curries/paneerCurry.jpg";
 import VegetableCurry from "../../assets/curries/vegetableCurry.jpg";
 import VegetableKorma from "../../assets/curries/vegetableKorma.jpg";
+import { useEffect, useState } from "react";
+
 
 const localImages = {
   "chickenCurry.jpg": ChickenCurry,
@@ -26,11 +28,23 @@ const localImages = {
 };
 
 const Curries = ({ cart, setCart }) => {
+  const [items, setItems] = useState([]);
+  // localStorage.removeItem("menuItems");
+  useEffect(() => {
+    const storedItems = localStorage.getItem("combinedMenuItems");
+    if (storedItems) {
+      setItems(JSON.parse(storedItems));
+    } else {
+      setItems(CurryItems);
+    }
+  }, []);
+
+  const filteredItems = items.filter((item) => item.category === "Curries");
   return (
     <div className="food-item-container">
       <h2 className="food-item-section">Curries Specials</h2>
       <FoodItemGrid
-        items={CurryItems}
+        items={filteredItems}
         localImages={localImages}
         cart={cart}
         setCart={setCart}
